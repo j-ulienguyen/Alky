@@ -60,3 +60,11 @@ body {
     /* width: 100%; */
     /* border: 2px solid lightgreen; */
 }
+
+#players-section {
+    margin: 1rem;
+}
+
+#Single-Player_Icon {
+    margin-bottom: 0.5rem;
+}
