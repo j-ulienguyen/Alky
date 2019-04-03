@@ -1,0 +1,63 @@
+body {
+    /* TEMPORARY BG */
+    background-color: var(--darkgrey);
+
+    /* Input BG image when ready */
+}
+
+/******************************************
+            Header - Logo (Small)
+*******************************************/
+#logo-container {
+    width: 100%;
+
+    text-align: center;
+    margin: 0 auto;
+    padding: 10vh 0;
+
+    border: 2px solid red;
+}
+
+#logo {
+    width: 8rem;
+    border: 2px solid red;
+}
+
+
+/******************************************
+              Main - Content
+*******************************************/
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+    width: 85%;
+    height: 68vh;
+    margin: 0 auto;
+    border: 2px solid yellow;
+}
+
+#name-section {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#name-input {
+    width: 18rem;
+    height: 2.5rem;
+
+    border-radius: 10rem;
+    border: 0;
+
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+#btn-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    /* width: 100%; */
+    /* border: 2px solid lightgreen; */
+}
