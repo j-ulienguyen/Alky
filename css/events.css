@@ -1,8 +1,9 @@
 body {
-    /* TEMPORARY BG */
+    background-image: url("/img/drink-bg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: var(--darkgrey);
-
-    /* Input BG image when ready */
 }
 
 /******************************************
