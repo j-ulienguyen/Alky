@@ -58,6 +58,14 @@ body {
     font-family: "Nunito Sans", sans-serif;
     font-size: 1em;
     font-weight: 300;
+    color: #fff;
+}
+
+.body-text-ingredients {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--darkgrey);
 }
 
 .main-heading {
