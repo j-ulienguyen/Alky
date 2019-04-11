@@ -1,8 +1,10 @@
 body {
-    /* TEMPORARY BG */
+    background-image: url("/img/drink-bg3.jpg");
+    /* Need to correct sizing */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: var(--darkgrey);
-
-    /* Input BG image when ready */
 }
 
 /******************************************
