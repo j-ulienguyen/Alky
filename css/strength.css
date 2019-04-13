@@ -1,5 +1,5 @@
 body {
-    background-image: url("/img/drink-bg.jpg");
+    background-image: url("../img/drink-bg.jpg");
     /* Need to correct sizing */
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,5 +1,5 @@
 body {
-    background-image: url("/img/martini-bg.jpeg");
+    background-image: url("../img/martini-bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
