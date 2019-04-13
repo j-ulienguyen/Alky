@@ -4,13 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Alky</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- TEMPORARY -->
+    <style>
+        .logo-big,
+        #start-page,
+        #players-page,
+        #mood-page,
+        #events-page,
+        #strength-page,
+        #recommend-page,
+        .logo-small {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Alky</h1>
-    
-    
-    
+    <!-- Background Bubbles -->
+    <div id="bubbles-container">
+        <ul class="bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- Alky Logo -->
+    <header class="logo-container logo-big">
+        <!-- Big Logo -->
+        <a href="index.html"><img id="logo" src="img/alky-white.svg" alt="Alky Logo"></a>
+    </header>
+
+    <header class="logo-container logo-small">
+        <!-- Small Logo -->
+        <a href="index.html"><img id="logo-small" src="img/alky-white.svg" alt="Alky Logo"></a>
+    </header>
+
+    <!-- Start Page (1) -->
+    <div id="start-page" class="partial-wrapper">
+        <section id="name-section">
+            <br>
+            <br>
+            <p class="body-text white">Hi, what's <span class="skyblue">your name?</span></p>
+            <input type="text" name="name" id="name-input" placeholder="Enter Your Name">
+        </section>
+        <section class="btn-section">
+            <button class="btn btn-text">Continue</button>
+            <button class="btn-min btn-text btn-text--min">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Players Page (2) -->
+    <div id="players-page" class="partial-wrapper">
+        <h1 class="main-heading">How many people are <span class="skyblue">drinking?</span></h1>
+
+        <section id="players-section">
+            <img id="single-icon" class="icons-big" src="img/single-player_icon.svg" alt="Single Player">
+            <img id="multiplayer-icon" class="icons-big" src="img/multiplayer_icon.svg" alt="Multiplayer">
+        </section>
+        <br><br>
+
+        <section class="btn-section">
+            <button class="btn btn-text">Continue</button>
+            <button class="btn-min btn-text btn-text--min">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Mood Page (3a) -->
+    <div id="mood-page" class="partial-wrapper">
+        <h1 class="main-heading white">How are you<br><span class="skyblue">feeling?</span></h1>
+        <section id="mood-section">
+            <div class="icon-container">
+                <img class="icons" src="img/happy_icon.svg" alt="Happy">
+                <img class="icons" src="img/heartbroken_icon.svg" alt="Heartbroken">
+                <img class="icons" src="img/fatigue_icon.svg" alt="Fatigue">
+                <img class="icons" src="img/stressed_icon.svg" alt="Stressed">
+            </div>
+        </section>
+        <section class="btn-section">
+            <button class="btn btn-text">Continue</button>
+            <button class="btn-min btn-text btn-text--min">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Events Page (3b) -->
+    <div id="events-page" class="partial-wrapper">
+        <h1 class="main-heading white">What are you doing<br><span class="skyblue">tonight?</span></h1>
+        <section id="event-section">
+            <div class="icon-container">
+                <img class="icons" src="img/going-out_icon.svg" alt="Going Out">
+                <img class="icons" src="img/birthday_icon.svg" alt="Birthday">
+                <img class="icons" src="img/relaxing_icon.svg" alt="Relaxing">
+                <img class="icons" src="img/game-night_icon.svg" alt="Game Night">
+            </div>
+        </section>
+        <section class="btn-section">
+            <button class="btn btn-text">Continue</button>
+            <button class="btn-min btn-text btn-text--min">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Strength Page (4) -->
+    <div id="strength-page" class="partial-wrapper">
+        <h1 class="main-heading">Strength of<span class="skyblue"> Drink?</span></h1>
+
+        <section id="strength-section">
+            <img class="strength-icon" id="Light" src="img/light_icon.svg" alt="Light Strength">
+            <img class="strength-icon" id="Medium" src="img/medium_icon.svg" alt="Medium Strength">
+            <img class="strength-icon" id="Hard" src="img/hard_icon.svg" alt="Hard Strength">
+        </section>
+        <br>
+
+        <section class="btn-section">
+            <button class="btn btn-text">Continue</button>
+            <button class="btn-min btn-text btn-text--min">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Drink Recommendation Page (5) -->
+    <div id="recommend-page" class="partial-wrapper">
+        <h3 class="recommendation-text white">Drink Recommendation</h3>
+        <h1 class="main-heading white uppercase">Classic <span class="skyblue">Martini</span></h1>
+
+        <section id="drink-section">
+            <div class="icon-container">
+                <img src="img/martini_icon.svg" alt="Going Out">
+            </div>
+            <p class="drink-info body-text white">Nothing like a nice glass of Classic Martini. This is the perfect subtle drink for your mood today! Click below to view the full receipe and we hope you enjoy the drink.</p>
+        </section>
+
+        <section class="btn-section">
+            <button class="btn btn-text">View Recipe</button>
+            <button class="btn-min btn-text btn-text--min">Restart</button>
+        </section>
+    </div>
+
+    <!-- Drink Recipe Page (6) -->
+    <div id="recipe-page">
+        <section id="drink-header" class="section-bottom"></section>
+
+        <main class="full-wrapper">
+            <section id="recipe-intro" class="section-bottom">
+                <h1 class="main-heading">CLASSIC <span class="skyblue">MARTINI</span></h1>
+                <p class="body-text">Martinis are fun, fruity and quite simple to make. They consist of vodka and today we will be infusing blueberries and mango to provide the supple sweetness to the drink.</p><br><br>
+            </section>
+
+            <section class="btn-section">
+                <button class="btn btn-text">Ingredients</button>
+                <button class="btn btn-text">Instructions</button>
+            </section>
+
+            <section id="ingredients-section" class="section-bottom">
+                <section id="ingredients-width">
+                    <h1 class="main-heading skyblue"><span class="skyblue">INGREDIENTS</span></h1>
+                    <p class="body-text-ingredients">
+                    1 1/2 ounces Vodka (Ultimat)<br>
+                    1/2 ounce​ Orange Liqueur (Patron Citronge)<br>
+                    2 ounces ​Blueberry Juice (fresh)<br>
+                    1 ounce Mango Juice (fresh)<br>
+                    Garnish: Fresh Blueberries
+                    </p>
+                </section>
+            </section>
+
+            <section id="instructions-section" class="section-bottom">
+                <h1 class="main-heading skyblue"><span class="skyblue">INSTRUCTIONS</span></h1>
+                    <ol class="body-text">
+                        <li>Gather the ingredients.</li>
+                        <li>Pour the ingredients into a cocktail shaker filled with ice.</li>
+                        <li>Shake well.</li>
+                        <li>Strain into a chilled cocktail glass.</li>
+                        <li>Garnish with fresh blueberries skewered on a cocktail pick or float them on top of the drink.</li>
+                        <li>Serve and enjoy!</li>
+                    </ol>
+            </section>
+
+            <section id="animation-icon" class="section-bottom">
+                <img src="img/martini_icon.svg" alt="martini glass">
+            </section>
+        </main>
+    </div>
 </body>
 </html>

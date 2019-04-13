@@ -1,0 +1,586 @@
+/******************************************
+             Import Web Fonts
+*******************************************/
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,400i,600,600i|Nunito+Sans:300,300i,400,400i');
+
+/* Nunito Sans */
+/* 300(i) - Light (Italics) */
+/* 400(i) - Regular (Italics) */
+
+/* IBM Plex Sans */
+/* 400(i) - Regular (Italics) */
+/* 600(i) - Semi-Bold (Italics) */
+
+
+/******************************************
+                   General
+*******************************************/
+:root {
+    /* Color Variables */
+    --darkgrey: #333333;
+    --violet: #6644af;
+    --skyblue: #1ec4dc;
+    --indigo: #451380;
+    --steelblue: #4d71bc;
+    --deepskyblue: #369acd;
+}
+
+* {
+    /* Reset box-sizing for all elements */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classes for Font Colors */
+.darkgrey {color: var(--darkgrey);}
+.violet {color: var(--violet);}
+.skyblue {color: var(--skyblue);}
+.white {color: white;}
+
+/* Dark overlay for background images */
+/* Put this class into the <body> */
+/* .bg-overlay {
+    position: relative;
+}
+
+.bg-overlay:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+    opacity: 0.75;
+} */
+
+
+/******************************************
+                Typography
+*******************************************/
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+}
+
+.body-text {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #fff;
+}
+
+.body-text-ingredients {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--darkgrey);
+}
+
+.main-heading {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.25em;
+
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.subheading {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-variant: small-caps;
+    line-height: 1.15em;
+
+    margin-bottom: 0.75rem;
+}
+
+.btn-text {
+    /* Main Buttons */
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn-text--min {
+    /* Text Only Buttons */
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:visited {
+    color: black;
+}
+
+.links {
+    color: inherit;
+}
+
+.links:hover {
+    color: var(--skyblue);
+    transition: color 0.3s;
+}
+
+.recommendation-text {
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 0.5rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/******************************************
+                  Buttons
+*******************************************/
+.btn {
+    width: 13rem;
+    height: 3rem;
+
+    border-radius: 10rem;
+    border: 0;
+
+    background-color: var(--skyblue);
+
+    margin-bottom: 3%;
+}
+
+.btn:hover {
+    border: 2px solid;
+    border-radius: 10rem;
+    border-color: var(--skyblue);
+
+    background-color: transparent;
+    transition: background-color 0.6s, border-color 0.6s;
+}
+
+.btn-min {
+    width: 13rem;
+    height: 2.5rem;
+
+    border: 0;
+    background-color: transparent;
+}
+
+.btn-min:hover {
+    /* TEST */
+    color: var(--skyblue);
+    transition: color 0.3s;
+}
+
+
+/******************************************
+                Background
+*******************************************/
+body {
+    background-color: var(--darkgrey); /* Fallback color */
+    background: linear-gradient(-45deg, #2f86b1, #2d0c52, #2f86b1);
+    background-size: 400% 400%;
+    animation: bg-gradient 20s ease infinite;
+}
+
+@keyframes bg-gradient {
+    0% {background-position: 0 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 50%;}
+}
+
+@keyframes bubbles-animation {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.4;
+        border-radius: 0;
+    }
+
+    75% {
+        border-radius: 50%;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+    }
+}
+
+#bubbles-container {
+    position: absolute;
+    width: 100%;
+    /* FIX HEIGHT FOR TALLER PAGES */
+    height: 100vh;
+    pointer-events: none;
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bubbles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    z-index: -1;
+
+    width: 20px;
+    height: 20px;
+
+    background: rgba(255, 255, 255, 0.2);
+    bottom: -150px;
+
+    animation: bubbles-animation 25s linear infinite;
+}
+
+.bubbles li:nth-child(1){
+    left: 80%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 3s;
+}
+
+.bubbles li:nth-child(2){
+    left: 5%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 2s;
+    animation-duration: 15s;
+}
+
+.bubbles li:nth-child(3){
+    left: 8%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 3s;
+}
+
+.bubbles li:nth-child(4){
+    left: 35%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.bubbles li:nth-child(5){
+    left: 65%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 1s;
+}
+
+.bubbles li:nth-child(6){
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 3s;
+    animation-duration: 15s;
+}
+
+.bubbles li:nth-child(7){
+    left: 35%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 7s;
+}
+
+.bubbles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 5s;
+    animation-duration: 15s;
+}
+
+.bubbles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 3s;
+    animation-duration: 30s;
+}
+
+.bubbles li:nth-child(10){
+    left: 85%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 2s;
+    animation-duration: 30s;
+}
+
+/******************************************
+               Page Wrapper
+*******************************************/
+/* Apply class to <main> */
+.partial-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+    width: 85%;
+    height: 68vh;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.full-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+    width: 100%;
+    height: 68vh;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+
+/******************************************
+             Header - Logo (Big)
+*******************************************/
+.logo-container {
+    width: 100%;
+
+    text-align: center;
+    margin: 0 auto;
+    padding: 10vh 0;
+    /* background-color: lightcoral; */
+}
+
+#logo {
+    width: 15rem;
+    /* border: 2px solid red; */
+}
+
+
+/******************************************
+            Header - Logo (Small)
+*******************************************/
+#logo-small {
+    width: 8rem;
+    /* border: 2px solid red; */
+}
+
+
+/******************************************
+               Start Page (1)
+*******************************************/
+#name-section {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#name-input {
+    width: 18rem;
+    height: 2.5rem;
+
+    border-radius: 10rem;
+    border: 0;
+
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+.btn-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    /* width: 100%; */
+    /* border: 2px solid lightgreen; */
+}
+
+
+/******************************************
+              Players Page (2)
+*******************************************/
+#players-section {
+    margin: 1rem;
+}
+
+#singleplayer-icon {
+    margin-bottom: 0.5rem;
+}
+
+.icons-big:hover {
+    position: relative;
+    bottom: 5px;
+}
+
+
+/******************************************
+      Mood Page (3a) // Events Page (3b)
+*******************************************/
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-bottom: 1.5rem;
+    /* border: 2px solid green; */
+}
+
+.icons {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.icons:hover {
+    position: relative;
+    bottom: 5px;
+}
+
+
+/******************************************
+              Strength Page (4)
+*******************************************/
+#strength-section {
+    margin: 1rem;
+}
+
+.strength-icon {
+    margin-bottom: 1rem;
+}
+
+.strength-icon:hover {
+    position: relative;
+    bottom: 5px;
+}
+
+
+/******************************************
+        Drink Recommendation Page (5)
+*******************************************/
+.drink-info {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#drink-section {
+    margin-bottom: 3rem;
+}
+
+
+/******************************************
+           Drink Recipe Page (6)
+*******************************************/
+#drink-header {
+    width: 100%;
+    height: 13rem;
+
+    background-position: center 65%;
+    background-size: cover;
+    background-image: url(../img/martini-recipe.jpg);
+}
+
+.section-bottom {
+    margin-bottom: 2rem;
+}
+
+.body-text {
+    text-align: center;
+}
+
+#recipe-intro {
+    display: flex;
+    flex-direction: column;
+
+    width: 85%;
+    margin: auto;
+}
+
+#ingredients-section {
+    color: var(--darkgrey);
+    position: relative;
+    top: 2rem;
+
+    background-color: #fff;
+    padding-top: 2rem;
+}
+
+#ingredients-width {
+    width: 85%;
+    text-align: center;
+
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+ #instructions-section {
+    color: var(--darkgrey);
+    width: 75%;
+
+    position: relative;
+    top: 2rem;
+
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+ol li::before {
+    width: 1em;
+    content: counter(li);
+    color: var(--skyblue);
+    font-weight: bold;
+    text-align: right;
+
+    margin-left: -1em;
+    margin-right: 0.5em;
+}
+
+li {
+    counter-increment: li;
+    list-style: none;
+    text-align: left;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(150px);
+  }
+  34% {
+    transform: translateY(20px);
+  }
+  37% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(150px);
+  }
+}
+
+#animation-icon {
+    transform: translateY(150px);
+    animation: popup 6s 4s ease infinite;
+}
+
+img.cls-1 {
+    /* Don't display icon box */
+    display: none;
+}
