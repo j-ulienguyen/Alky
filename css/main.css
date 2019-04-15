@@ -226,8 +226,13 @@ body {
 #bubbles-container {
     position: absolute;
     width: 100%;
+
     /* FIX HEIGHT FOR TALLER PAGES */
-    height: 100vh;
+    /* TEST */
+    min-height: 100vh;
+    overflow: hidden;
+    /* height: 100vh; */
+
     pointer-events: none;
 }
 
@@ -335,7 +340,7 @@ body {
 /******************************************
                Page Wrapper
 *******************************************/
-/* Apply class to <main> */
+/* Apply class to <div> */
 .partial-wrapper {
     display: flex;
     flex-direction: column;
@@ -343,7 +348,12 @@ body {
     align-content: space-between;
 
     width: 85%;
-    height: 68vh;
+
+    /* TEST */
+    min-height: 68vh;
+    overflow: hidden;
+    /* height: 68vh; */
+
     margin: 0 auto;
     /* border: 2px solid red; */
 }
@@ -355,7 +365,11 @@ body {
     align-content: space-between;
 
     width: 100%;
-    height: 68vh;
+    /* TEST */
+    min-height: 68vh;
+    overflow: hidden;
+    /* height: 68vh; */
+
     margin: 0 auto;
     /* border: 2px solid red; */
 }
@@ -364,7 +378,7 @@ body {
 /******************************************
              Header - Logo (Big)
 *******************************************/
-.logo-container {
+#logo-container {
     width: 100%;
 
     text-align: center;
@@ -382,10 +396,10 @@ body {
 /******************************************
             Header - Logo (Small)
 *******************************************/
-#logo-small {
+/* #logo-small {
     width: 8rem;
     /* border: 2px solid red; */
-}
+} */
 
 
 /******************************************
@@ -582,5 +596,18 @@ li {
 
 img.cls-1 {
     /* Don't display icon box */
+    display: none;
+}
+
+
+/* Display will be defined in JS */
+/* Start with nothing */
+#start-page,
+#players-page,
+#mood-page,
+#events-page,
+#strength-page,
+#recommend-page,
+#recipe-page {
     display: none;
 }

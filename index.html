@@ -7,20 +7,6 @@
     <title>Alky</title>
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="css/main.css">
-
-    <!-- TEMPORARY -->
-    <style>
-        .logo-big,
-        #start-page,
-        #players-page,
-        #mood-page,
-        #events-page,
-        #strength-page,
-        #recommend-page,
-        .logo-small {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <!-- Background Bubbles -->
@@ -40,14 +26,9 @@
     </div>
 
     <!-- Alky Logo -->
-    <header class="logo-container logo-big">
+    <header id="logo-container">
         <!-- Big Logo -->
         <a href="index.html"><img id="logo" src="img/alky-white.svg" alt="Alky Logo"></a>
-    </header>
-
-    <header class="logo-container logo-small">
-        <!-- Small Logo -->
-        <a href="index.html"><img id="logo-small" src="img/alky-white.svg" alt="Alky Logo"></a>
     </header>
 
     <!-- Start Page (1) -->
@@ -56,11 +37,12 @@
             <br>
             <br>
             <p class="body-text white">Hi, what's <span class="skyblue">your name?</span></p>
-            <input type="text" name="name" id="name-input" placeholder="Enter Your Name">
+            <input type="text" name="name" id="name-input" placeholder="Enter Your Name" onkeyup="StoreName(this)">
         </section>
+
         <section class="btn-section">
-            <button class="btn btn-text">Continue</button>
-            <button class="btn-min btn-text btn-text--min">Go Back</button>
+            <button class="btn btn-text continue" onclick="ChangePage('startPage')">Continue</button>
+            <!-- <button class="btn-min btn-text btn-text--min">Go Back</button> -->
         </section>
     </div>
 
@@ -75,7 +57,7 @@
         <br><br>
 
         <section class="btn-section">
-            <button class="btn btn-text">Continue</button>
+            <button class="btn btn-text" onclick="ChangePage('playersPage')">Continue</button>
             <button class="btn-min btn-text btn-text--min">Go Back</button>
         </section>
     </div>
@@ -83,6 +65,7 @@
     <!-- Mood Page (3a) -->
     <div id="mood-page" class="partial-wrapper">
         <h1 class="main-heading white">How are you<br><span class="skyblue">feeling?</span></h1>
+
         <section id="mood-section">
             <div class="icon-container">
                 <img class="icons" src="img/happy_icon.svg" alt="Happy">
@@ -91,8 +74,9 @@
                 <img class="icons" src="img/stressed_icon.svg" alt="Stressed">
             </div>
         </section>
+
         <section class="btn-section">
-            <button class="btn btn-text">Continue</button>
+            <button class="btn btn-text" onclick="ChangePage('moodPage')">Continue</button>
             <button class="btn-min btn-text btn-text--min">Go Back</button>
         </section>
     </div>
@@ -100,6 +84,7 @@
     <!-- Events Page (3b) -->
     <div id="events-page" class="partial-wrapper">
         <h1 class="main-heading white">What are you doing<br><span class="skyblue">tonight?</span></h1>
+
         <section id="event-section">
             <div class="icon-container">
                 <img class="icons" src="img/going-out_icon.svg" alt="Going Out">
@@ -108,8 +93,9 @@
                 <img class="icons" src="img/game-night_icon.svg" alt="Game Night">
             </div>
         </section>
+
         <section class="btn-section">
-            <button class="btn btn-text">Continue</button>
+            <button class="btn btn-text" onclick="ChangePage('eventsPage')">Continue</button>
             <button class="btn-min btn-text btn-text--min">Go Back</button>
         </section>
     </div>
@@ -126,7 +112,7 @@
         <br>
 
         <section class="btn-section">
-            <button class="btn btn-text">Continue</button>
+            <button class="btn btn-text" onclick="ChangePage('strengthPage')">Continue</button>
             <button class="btn-min btn-text btn-text--min">Go Back</button>
         </section>
     </div>
@@ -144,7 +130,7 @@
         </section>
 
         <section class="btn-section">
-            <button class="btn btn-text">View Recipe</button>
+            <button class="btn btn-text" onclick="ChangePage('recommendPage')">View Recipe</button>
             <button class="btn-min btn-text btn-text--min">Restart</button>
         </section>
     </div>
@@ -153,7 +139,7 @@
     <div id="recipe-page">
         <section id="drink-header" class="section-bottom"></section>
 
-        <main class="full-wrapper">
+        <div class="full-wrapper">
             <section id="recipe-intro" class="section-bottom">
                 <h1 class="main-heading">CLASSIC <span class="skyblue">MARTINI</span></h1>
                 <p class="body-text">Martinis are fun, fruity and quite simple to make. They consist of vodka and today we will be infusing blueberries and mango to provide the supple sweetness to the drink.</p><br><br>
@@ -192,7 +178,10 @@
             <section id="animation-icon" class="section-bottom">
                 <img src="img/martini_icon.svg" alt="martini glass">
             </section>
-        </main>
+        </div>
     </div>
+
+    <!-- Link to External JS -->
+    <script src="js/app.js"></script>
 </body>
 </html>
