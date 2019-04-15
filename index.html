@@ -51,8 +51,8 @@
         <h1 class="main-heading">How many people are <span class="skyblue">drinking?</span></h1>
 
         <section id="players-section">
-            <img id="single-icon" class="icons-big" src="img/single-player_icon.svg" alt="Single Player">
-            <img id="multiplayer-icon" class="icons-big" src="img/multiplayer_icon.svg" alt="Multiplayer">
+            <img id="single-icon" class="icons-big" src="img/single-player_icon.svg" alt="Single Player" onclick="ActiveIcon(this)">
+            <img id="multiplayer-icon" class="icons-big" src="img/multiplayer_icon.svg" alt="Multiplayer" onclick="ActiveIcon(this)">
         </section>
         <br><br>
 
@@ -68,10 +68,10 @@
 
         <section id="mood-section">
             <div class="icon-container">
-                <img class="icons" src="img/happy_icon.svg" alt="Happy">
-                <img class="icons" src="img/heartbroken_icon.svg" alt="Heartbroken">
-                <img class="icons" src="img/fatigue_icon.svg" alt="Fatigue">
-                <img class="icons" src="img/stressed_icon.svg" alt="Stressed">
+                <img id="happy-icon" class="icons" src="img/happy_icon.svg" alt="Happy" onclick="ActiveIcon(this)">
+                <img id="heartbroken-icon" class="icons" src="img/heartbroken_icon.svg" alt="Heartbroken" onclick="ActiveIcon(this)">
+                <img id="fatigue-icon" class="icons" src="img/fatigue_icon.svg" alt="Fatigue" onclick="ActiveIcon(this)">
+                <img id="stressed-icon" class="icons" src="img/stressed_icon.svg" alt="Stressed" onclick="ActiveIcon(this)">
             </div>
         </section>
 
@@ -87,10 +87,10 @@
 
         <section id="event-section">
             <div class="icon-container">
-                <img class="icons" src="img/going-out_icon.svg" alt="Going Out">
-                <img class="icons" src="img/birthday_icon.svg" alt="Birthday">
-                <img class="icons" src="img/relaxing_icon.svg" alt="Relaxing">
-                <img class="icons" src="img/game-night_icon.svg" alt="Game Night">
+                <img id="goingout-icon" class="icons" src="img/going-out_icon.svg" alt="Going Out" onclick="ActiveIcon(this)">
+                <img id="birthday-icon" class="icons" src="img/birthday_icon.svg" alt="Birthday" onclick="ActiveIcon(this)">
+                <img id="relaxing-icon" class="icons" src="img/relaxing_icon.svg" alt="Relaxing" onclick="ActiveIcon(this)">
+                <img id="gamenight-icon" class="icons" src="img/game-night_icon.svg" alt="Game Night" onclick="ActiveIcon(this)">
             </div>
         </section>
 
@@ -105,9 +105,9 @@
         <h1 class="main-heading">Strength of<span class="skyblue"> Drink?</span></h1>
 
         <section id="strength-section">
-            <img class="strength-icon" id="Light" src="img/light_icon.svg" alt="Light Strength">
-            <img class="strength-icon" id="Medium" src="img/medium_icon.svg" alt="Medium Strength">
-            <img class="strength-icon" id="Hard" src="img/hard_icon.svg" alt="Hard Strength">
+            <img class="strength-icon" id="light-icon" src="img/light_icon.svg" alt="Light Strength" onclick="ActiveIcon(this)">
+            <img class="strength-icon" id="medium-icon" src="img/medium_icon.svg" alt="Medium Strength" onclick="ActiveIcon(this)">
+            <img class="strength-icon" id="hard-icon" src="img/hard_icon.svg" alt="Hard Strength" onclick="ActiveIcon(this)">
         </section>
         <br>
 
@@ -146,8 +146,8 @@
             </section>
 
             <section class="btn-section">
-                <button class="btn btn-text">Ingredients</button>
-                <button class="btn btn-text">Instructions</button>
+                <a href="#ingredients-section"><button class="btn btn-text">Ingredients</button></a>
+                <a href="#instructions-section"><button class="btn btn-text">Instructions</button></a>
             </section>
 
             <section id="ingredients-section" class="section-bottom">

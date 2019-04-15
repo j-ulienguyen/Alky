@@ -219,7 +219,7 @@ body {
     }
 
     100% {
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-1200px) rotate(720deg);
     }
 }
 
@@ -229,9 +229,9 @@ body {
 
     /* FIX HEIGHT FOR TALLER PAGES */
     /* TEST */
-    min-height: 100vh;
-    overflow: hidden;
-    /* height: 100vh; */
+    /* min-height: 100vh; */
+    /* overflow: hidden; */
+    height: 100vh;
 
     pointer-events: none;
 }
@@ -350,9 +350,9 @@ body {
     width: 85%;
 
     /* TEST */
-    min-height: 68vh;
-    overflow: hidden;
-    /* height: 68vh; */
+    /* min-height: 68vh; */
+    /* overflow: hidden; */
+    height: 68vh;
 
     margin: 0 auto;
     /* border: 2px solid red; */
@@ -366,9 +366,9 @@ body {
 
     width: 100%;
     /* TEST */
-    min-height: 68vh;
-    overflow: hidden;
-    /* height: 68vh; */
+    /* min-height: 68vh; */
+    /* overflow: hidden; */
+    height: 68vh;
 
     margin: 0 auto;
     /* border: 2px solid red; */
@@ -376,7 +376,7 @@ body {
 
 
 /******************************************
-             Header - Logo (Big)
+               Header - Logo
 *******************************************/
 #logo-container {
     width: 100%;
@@ -391,15 +391,6 @@ body {
     width: 15rem;
     /* border: 2px solid red; */
 }
-
-
-/******************************************
-            Header - Logo (Small)
-*******************************************/
-/* #logo-small {
-    width: 8rem;
-    /* border: 2px solid red; */
-} */
 
 
 /******************************************
@@ -433,11 +424,13 @@ body {
               Players Page (2)
 *******************************************/
 #players-section {
-    margin: 1rem;
+    text-align: center;
+    /* border: 1px solid red; */
 }
 
-#singleplayer-icon {
-    margin-bottom: 0.5rem;
+.icons-big {
+    width: 90%;
+    /* border: 1px solid red; */
 }
 
 .icons-big:hover {
@@ -474,12 +467,15 @@ body {
               Strength Page (4)
 *******************************************/
 #strength-section {
-    margin: 1rem;
+    text-align: center;
+    /* border: 1px solid red; */
 }
 
 .strength-icon {
-    margin-bottom: 1rem;
+    width: 90%;
+    margin-bottom: 0.75rem;
 }
+
 
 .strength-icon:hover {
     position: relative;
@@ -610,4 +606,12 @@ img.cls-1 {
 #recommend-page,
 #recipe-page {
     display: none;
+}
+
+/* When a button is selected - White glow will appear */
+.active-icon {
+    border-radius: 0.8em;
+    box-shadow: 0 0 8px white;
+
+    transition: box-shadow 0.3s;
 }
