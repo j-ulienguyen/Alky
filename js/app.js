@@ -76,29 +76,66 @@ function StoreName(el){
 }
 
 function ChangePage(currentPage){
+    // Go to next page
     if(currentPage == "startPage"){
         pkg.currentPage = "playersPage";
     }
 
-    if(currentPage == "playersPage"){
-        if(pkg.numPlayers == "single"){
+    else if(currentPage == "playersPage"){
+        if(pkg.numPlayers == ""){
+            // User did not pick an option
+            // Stay on same page
+            alert("Please select an option.");
+            pkg.currentPage = "playersPage";
+        }
+
+        else if(pkg.numPlayers == "single"){
             pkg.currentPage = "moodPage";
         }
 
-        if(pkg.numPlayers == "multiplayer"){
+        else if(pkg.numPlayers == "multiplayer"){
             pkg.currentPage = "eventsPage";
         }
+
     }
 
-    if(currentPage == "moodPage" || currentPage == "eventsPage"){
-        pkg.currentPage = "strengthPage";
+    else if(currentPage == "moodPage"){
+        if(pkg.mood == ""){
+            // User did not pick an option
+            // Stay on same page
+            alert("Please select an option.");
+            pkg.currentPage = "moodPage";
+        }
+            else{
+                pkg.currentPage = "strengthPage";
+            }
     }
 
-    if(currentPage == "strengthPage"){
-        pkg.currentPage = "recommendPage";
+    else if(currentPage == "eventsPage"){
+        if(pkg.event == ""){
+            // User did not pick an option
+            // Stay on same page
+            alert("Please select an option.");
+            pkg.currentPage = "eventsPage";
+        }
+            else{
+                pkg.currentPage = "strengthPage";
+            }
     }
 
-    if(currentPage == "recommendPage"){
+    else if(currentPage == "strengthPage"){
+        if(pkg.strength == ""){
+            // User did not pick an option
+            // Stay on same page
+            alert("Please select an option.");
+            pkg.currentPage = "strengthPage";
+        }
+            else{
+                pkg.currentPage = "recommendPage";
+            }
+    }
+
+    else if(currentPage == "recommendPage"){
         pkg.currentPage = "recipePage";
     }
 
@@ -109,6 +146,205 @@ function ChangePage(currentPage){
     console.log("var currentPage =", currentPage);
 }
 
+function ChangePageBack(currentPage){
+    // Go back to previous page
+    if(currentPage == "playersPage"){
+        pkg.currentPage = "startPage";
+    }
+
+    else if(currentPage == "moodPage" || currentPage == "eventsPage"){
+        if(currentPage == "moodPage"){
+            // Reset mood selection
+            pkg.mood = "";
+        }
+
+        else if(currentPage == "eventsPage"){
+            // Reset event selection
+            pkg.event = "";
+        }
+
+        pkg.currentPage = "playersPage";
+    }
+
+    else if(currentPage == "strengthPage"){
+        if(pkg.numPlayers == "single"){
+            pkg.currentPage = "moodPage";
+        }
+
+        else if(pkg.numPlayers == "multiplayer"){
+            pkg.currentPage = "eventsPage";
+        }
+    }
+
+    else if(currentPage == "recommendPage"){
+        // Restart from beginning
+        pkg.currentPage = "startPage";
+    }
+
+    prox.currentPage = pkg.currentPage;
+    currentPage = prox.currentPage;
+}
+
+function ActiveIcon(el){
+    if(currentPage == "playersPage"){
+        singleplayer = document.querySelector("#single-icon"),
+        multiplayer = document.querySelector("#multiplayer-icon");
+
+        if(el.id == "single-icon"){
+            el.classList.add("active-icon");
+            multiplayer.classList.remove("active-icon");
+
+            pkg.numPlayers = "single";
+            console.log("Single - prox.numPlayers =", prox.numPlayers);
+        }
+
+        else if(el.id == "multiplayer-icon"){
+            el.classList.add("active-icon");
+            singleplayer.classList.remove("active-icon");
+
+            pkg.numPlayers = "multiplayer";
+            console.log("Multi - prox.numPlayers =", prox.numPlayers);
+        }
+    }
+
+    else if(currentPage == "moodPage"){
+        happy = document.querySelector("#happy-icon"),
+        heartbroken = document.querySelector("#heartbroken-icon"),
+        fatigue = document.querySelector("#fatigue-icon"),
+        stressed = document.querySelector("#stressed-icon");
+
+        if(el.id == "happy-icon"){
+            el.classList.add("active-icon");
+
+            heartbroken.classList.remove("active-icon");
+            fatigue.classList.remove("active-icon");
+            stressed.classList.remove("active-icon");
+
+            pkg.mood = "happy";
+            console.log("Happy - prox.mood =", prox.mood);
+        }
+
+        else if(el.id == "heartbroken-icon"){
+            el.classList.add("active-icon");
+
+            happy.classList.remove("active-icon");
+            fatigue.classList.remove("active-icon");
+            stressed.classList.remove("active-icon");
+
+            pkg.mood = "heartbroken";
+            console.log("Heartbroken - prox.mood =", prox.mood);
+        }
+
+        else if(el.id == "fatigue-icon"){
+            el.classList.add("active-icon");
+
+            happy.classList.remove("active-icon");
+            heartbroken.classList.remove("active-icon");
+            stressed.classList.remove("active-icon");
+
+            pkg.mood = "fatigue";
+            console.log("Fatigue - prox.mood =", prox.mood);
+        }
+
+        else if(el.id == "stressed-icon"){
+            el.classList.add("active-icon");
+
+            happy.classList.remove("active-icon");
+            heartbroken.classList.remove("active-icon");
+            fatigue.classList.remove("active-icon");
+
+            pkg.mood = "stressed";
+            console.log("Stressed - prox.mood =", prox.mood);
+        }
+    }
+
+    else if(currentPage == "eventsPage"){
+        goingout = document.querySelector("#goingout-icon"),
+        birthday = document.querySelector("#birthday-icon"),
+        relaxing = document.querySelector("#relaxing-icon"),
+        gamenight = document.querySelector("#gamenight-icon");
+
+        if(el.id == "goingout-icon"){
+            el.classList.add("active-icon");
+
+            birthday.classList.remove("active-icon");
+            relaxing.classList.remove("active-icon");
+            gamenight.classList.remove("active-icon");
+
+            pkg.event = "goingout";
+            console.log("Going Out - prox.mood =", prox.event);
+        }
+
+        else if(el.id == "birthday-icon"){
+            el.classList.add("active-icon");
+
+            goingout.classList.remove("active-icon");
+            relaxing.classList.remove("active-icon");
+            gamenight.classList.remove("active-icon");
+
+            pkg.event = "birthday";
+            console.log("Birthday - prox.mood =", prox.event);
+        }
+
+        else if(el.id == "relaxing-icon"){
+            el.classList.add("active-icon");
+
+            goingout.classList.remove("active-icon");
+            birthday.classList.remove("active-icon");
+            gamenight.classList.remove("active-icon");
+
+            pkg.event = "relaxing";
+            console.log("Relaxing - prox.mood =", prox.event);
+        }
+
+        else if(el.id == "gamenight-icon"){
+            el.classList.add("active-icon");
+
+            goingout.classList.remove("active-icon");
+            birthday.classList.remove("active-icon");
+            relaxing.classList.remove("active-icon");
+
+            pkg.event = "gamenight";
+            console.log("Game Night - prox.mood =", prox.event);
+        }
+    }
+
+    else if(currentPage == "strengthPage"){
+        light = document.querySelector("#light-icon"),
+        medium = document.querySelector("#medium-icon"),
+        hard = document.querySelector("#hard-icon");
+
+        if(el.id == "light-icon"){
+            el.classList.add("active-icon");
+
+            medium.classList.remove("active-icon");
+            hard.classList.remove("active-icon");
+
+            pkg.strength = "light";
+            console.log("Light - prox.strength =", prox.strength);
+        }
+
+        else if(el.id == "medium-icon"){
+            el.classList.add("active-icon");
+
+            light.classList.remove("active-icon");
+            hard.classList.remove("active-icon");
+
+            pkg.strength = "medium";
+            console.log("Medium - prox.strength =", prox.strength);
+        }
+
+        else if(el.id == "hard-icon"){
+            el.classList.add("active-icon");
+
+            light.classList.remove("active-icon");
+            medium.classList.remove("active-icon");
+
+            pkg.strength = "hard";
+            console.log("Hard - prox.strength =", prox.strength);
+        }
+    }
+}
 
 
 //====================================
@@ -127,7 +363,7 @@ function ChangeLogo(){
         logo.style.width = 15 + "rem";
     }
 
-    if( currentPage == "playersPage" ||
+    else if( currentPage == "playersPage" ||
         currentPage == "moodPage" ||
         currentPage == "eventsPage" ||
         currentPage == "strengthPage" ||
@@ -136,7 +372,7 @@ function ChangeLogo(){
             logo.style.width = 8 + "rem";
         }
 
-    if(currentPage == "recipePage"){
+    else if(currentPage == "recipePage"){
         logoContainer.style.display = "none";
     }
 }
@@ -156,7 +392,7 @@ function ChangePageUI(currentPage){
         bubblesBG.style.height = 102 + "vh";
     }
 
-    if(currentPage == "playersPage"){
+    else if(currentPage == "playersPage"){
         ChangeLogo();
 
         startPage.style.display = "none";
@@ -170,7 +406,7 @@ function ChangePageUI(currentPage){
         bubblesBG.style.height = 112 + "vh";
     }
 
-    if(currentPage == "moodPage"){
+    else if(currentPage == "moodPage"){
         ChangeLogo();
 
         startPage.style.display = "none";
@@ -184,7 +420,7 @@ function ChangePageUI(currentPage){
         bubblesBG.style.height = 110 + "vh";
     }
 
-    if(currentPage == "eventsPage"){
+    else if(currentPage == "eventsPage"){
         ChangeLogo();
 
         startPage.style.display = "none";
@@ -198,7 +434,7 @@ function ChangePageUI(currentPage){
         bubblesBG.style.height = 110 + "vh";
     }
 
-    if(currentPage == "strengthPage"){
+    else if(currentPage == "strengthPage"){
         ChangeLogo();
 
         startPage.style.display = "none";
@@ -212,7 +448,7 @@ function ChangePageUI(currentPage){
         bubblesBG.style.height = 110 + "vh";
     }
 
-    if(currentPage == "recommendPage"){
+    else if(currentPage == "recommendPage"){
         ChangeLogo();
 
         startPage.style.display = "none";
@@ -226,7 +462,7 @@ function ChangePageUI(currentPage){
         bubblesBG.style.height = 115 + "vh";
     }
 
-    if(currentPage == "recipePage"){
+    else if(currentPage == "recipePage"){
         ChangeLogo();
 
         startPage.style.display = "none";
@@ -239,166 +475,6 @@ function ChangePageUI(currentPage){
     }
 }
 
-function ActiveIcon(el){
-    if(currentPage == "playersPage"){
-        singleplayer = document.querySelector("#single-icon"),
-        multiplayer = document.querySelector("#multiplayer-icon");
-
-        if(el.id == "single-icon"){
-            el.classList.add("active-icon");
-            multiplayer.classList.remove("active-icon");
-
-            pkg.numPlayers = "single";
-            console.log("Single - prox.numPlayers =", prox.numPlayers);
-        }
-
-        if(el.id == "multiplayer-icon"){
-            el.classList.add("active-icon");
-            singleplayer.classList.remove("active-icon");
-
-            pkg.numPlayers = "multiplayer";
-            console.log("Multi - prox.numPlayers =", prox.numPlayers);
-        }
-    }
-
-    if(currentPage == "moodPage"){
-        happy = document.querySelector("#happy-icon"),
-        heartbroken = document.querySelector("#heartbroken-icon"),
-        fatigue = document.querySelector("#fatigue-icon"),
-        stressed = document.querySelector("#stressed-icon");
-
-        if(el.id == "happy-icon"){
-            el.classList.add("active-icon");
-
-            heartbroken.classList.remove("active-icon");
-            fatigue.classList.remove("active-icon");
-            stressed.classList.remove("active-icon");
-
-            pkg.mood = "happy";
-            console.log("Happy - prox.mood =", prox.mood);
-        }
-
-        if(el.id == "heartbroken-icon"){
-            el.classList.add("active-icon");
-
-            happy.classList.remove("active-icon");
-            fatigue.classList.remove("active-icon");
-            stressed.classList.remove("active-icon");
-
-            pkg.mood = "heartbroken";
-            console.log("Heartbroken - prox.mood =", prox.mood);
-        }
-
-        if(el.id == "fatigue-icon"){
-            el.classList.add("active-icon");
-
-            happy.classList.remove("active-icon");
-            heartbroken.classList.remove("active-icon");
-            stressed.classList.remove("active-icon");
-
-            pkg.mood = "fatigue";
-            console.log("Fatigue - prox.mood =", prox.mood);
-        }
-
-        if(el.id == "stressed-icon"){
-            el.classList.add("active-icon");
-
-            happy.classList.remove("active-icon");
-            heartbroken.classList.remove("active-icon");
-            fatigue.classList.remove("active-icon");
-
-            pkg.mood = "stressed";
-            console.log("Stressed - prox.mood =", prox.mood);
-        }
-    }
-
-    if(currentPage == "eventsPage"){
-        goingout = document.querySelector("#goingout-icon"),
-        birthday = document.querySelector("#birthday-icon"),
-        relaxing = document.querySelector("#relaxing-icon"),
-        gamenight = document.querySelector("#gamenight-icon");
-
-        if(el.id == "goingout-icon"){
-            el.classList.add("active-icon");
-
-            birthday.classList.remove("active-icon");
-            relaxing.classList.remove("active-icon");
-            gamenight.classList.remove("active-icon");
-
-            pkg.event = "goingout";
-            console.log("Going Out - prox.mood =", prox.event);
-        }
-
-        if(el.id == "birthday-icon"){
-            el.classList.add("active-icon");
-
-            goingout.classList.remove("active-icon");
-            relaxing.classList.remove("active-icon");
-            gamenight.classList.remove("active-icon");
-
-            pkg.event = "birthday";
-            console.log("Birthday - prox.mood =", prox.event);
-        }
-
-        if(el.id == "relaxing-icon"){
-            el.classList.add("active-icon");
-
-            goingout.classList.remove("active-icon");
-            birthday.classList.remove("active-icon");
-            gamenight.classList.remove("active-icon");
-
-            pkg.event = "relaxing";
-            console.log("Relaxing - prox.mood =", prox.event);
-        }
-
-        if(el.id == "gamenight-icon"){
-            el.classList.add("active-icon");
-
-            goingout.classList.remove("active-icon");
-            birthday.classList.remove("active-icon");
-            relaxing.classList.remove("active-icon");
-
-            pkg.event = "gamenight";
-            console.log("Game Night - prox.mood =", prox.event);
-        }
-    }
-
-    if(currentPage == "strengthPage"){
-        light = document.querySelector("#light-icon"),
-        medium = document.querySelector("#medium-icon"),
-        hard = document.querySelector("#hard-icon");
-
-        if(el.id == "light-icon"){
-            el.classList.add("active-icon");
-
-            medium.classList.remove("active-icon");
-            hard.classList.remove("active-icon");
-
-            pkg.strength = "light";
-            console.log("Light - prox.strength =", prox.strength);
-        }
-
-        if(el.id == "medium-icon"){
-            el.classList.add("active-icon");
-
-            light.classList.remove("active-icon");
-            hard.classList.remove("active-icon");
-
-            pkg.strength = "medium";
-            console.log("Medium - prox.strength =", prox.strength);
-        }
-
-        if(el.id == "hard-icon"){
-            el.classList.add("active-icon");
-
-            light.classList.remove("active-icon");
-            medium.classList.remove("active-icon");
-
-            pkg.strength = "hard";
-            console.log("Hard - prox.strength =", prox.strength);
-        }
-    }
-}
 
 //====================================
 //          Event Listeners
