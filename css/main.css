@@ -675,7 +675,18 @@ img.cls-1 {
     display: none;
 }
 
+#arrow-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
 
+    width: 2.5em;
+}
+
+/******************************************
+
+*******************************************/
 /* Display will be defined in JS */
 /* Start with nothing */
 #start-page,
