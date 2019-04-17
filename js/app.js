@@ -475,6 +475,22 @@ function ChangePageUI(currentPage){
     }
 }
 
+function MenuToggle(el){
+    menuNav = document.querySelector("#menu-nav");
+
+    el.classList.toggle("menu-active");
+
+    if(el.classList.contains("menu-active")){
+        // Active Menu
+        menuNav.style.display = "flex";
+        menuNav.style.opacity = 1;
+        menuNav.style.pointerEvents = "auto"; // Allow to click
+    } else {
+        // Unactive Menu
+        menuNav.style.opacity = 0;
+        menuNav.style.pointerEvents = "none"; // Disable click
+    }
+}
 
 //====================================
 //          Event Listeners
