@@ -136,7 +136,7 @@
     <!-- Drink Recommendation Page (5) -->
     <div id="recommend-page" class="partial-wrapper">
         <h3 class="recommendation-text white">Drink Recommendation</h3>
-        <h1 class="main-heading white uppercase">Classic <span class="skyblue">Martini</span></h1>
+        <h1 class="main-heading white uppercase" id="drink-name">Classic <span class="skyblue">Martini</span></h1>
 
         <section id="drink-section">
             <div class="icon-container">
@@ -169,19 +169,19 @@
             <section id="ingredients-section" class="section-bottom">
                 <section id="ingredients-width">
                     <h1 class="main-heading skyblue"><span class="skyblue">INGREDIENTS</span></h1>
-                    <p class="body-text-ingredients">
-                    1 1/2 ounces Vodka (Ultimat)<br>
-                    1/2 ounce​ Orange Liqueur (Patron Citronge)<br>
-                    2 ounces ​Blueberry Juice (fresh)<br>
-                    1 ounce Mango Juice (fresh)<br>
-                    Garnish: Fresh Blueberries
-                    </p>
+                    <ol class="body-text-ingredients" id="ingredients-list">
+                        <li>1 1/2 ounces Vodka (Ultimat)</li>
+                        <li>1/2 ounce​ Orange Liqueur (Patron Citronge)</li>
+                        <li>2 ounces ​Blueberry Juice (fresh)</li>
+                        <li>1 ounce Mango Juice (fresh)</li>
+                        <li>Garnish: Fresh Blueberries</li>
+                    </ol>
                 </section>
             </section>
 
             <section id="instructions-section" class="section-bottom">
                 <h1 class="main-heading skyblue"><span class="skyblue">INSTRUCTIONS</span></h1>
-                    <ol class="body-text">
+                    <ol class="body-text" id="instructions-list">
                         <li>Gather the ingredients.</li>
                         <li>Pour the ingredients into a cocktail shaker filled with ice.</li>
                         <li>Shake well.</li>
@@ -200,6 +200,7 @@
     </div>
 
     <!-- Link to External JS -->
+    <script src="js/recipes.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
