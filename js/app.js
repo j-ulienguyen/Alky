@@ -503,6 +503,9 @@ function MenuToggle(el){
 function CreateIngredients(){
     ingredientsList = document.querySelector("#ingredients-list");
 
+    // Clear content inside list beforehand
+    ingredientsList.innerHTML = "";
+
     for(i = 0; i < currentRecipe.ingredients.length; i++){
         li = document.createElement("li");
         li.innerText = currentRecipe.ingredients[i];
@@ -512,6 +515,9 @@ function CreateIngredients(){
 
 function CreateInstructions(){
     instructionsList = document.querySelector("#instructions-list");
+
+    // Clear content inside list beforehand
+    instructionsList.innerHTML = "";
 
     for(i = 0; i < currentRecipe.instructions.length; i++){
         li = document.createElement("li");
