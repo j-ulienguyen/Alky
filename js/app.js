@@ -132,6 +132,8 @@ function ChangePage(currentPage){
         }
             else{
                 pkg.currentPage = "recommendPage";
+                // TEST ========================
+                ChangeDrinkRecipe();
             }
     }
 
@@ -178,7 +180,10 @@ function ChangePageBack(currentPage){
 
     else if(currentPage == "recommendPage"){
         // Restart from beginning
-        pkg.currentPage = "startPage";
+        // pkg.currentPage = "startPage";
+
+        // Restart from previous
+        pkg.currentPage = "strengthPage";
     }
 
     prox.currentPage = pkg.currentPage;
@@ -374,7 +379,9 @@ function ChangeLogo(){
         }
 
     else if(currentPage == "recipePage"){
-        logoContainer.style.display = "none";
+        // logoContainer.style.display = "none";
+
+        logo.style.width = 8 + "rem";
     }
 }
 
@@ -493,6 +500,50 @@ function MenuToggle(el){
     }
 }
 
+function CreateIngredients(){
+    ingredientsList = document.querySelector("#ingredients-list");
+
+    for(i = 0; i < currentRecipe.ingredients.length; i++){
+        li = document.createElement("li");
+        li.innerText = currentRecipe.ingredients[i];
+        ingredientsList.appendChild(li);
+    }
+}
+
+function CreateInstructions(){
+    instructionsList = document.querySelector("#instructions-list");
+
+    for(i = 0; i < currentRecipe.instructions.length; i++){
+        li = document.createElement("li");
+        li.innerText = currentRecipe.instructions[i];
+        instructionsList.appendChild(li);
+    }
+}
+
+function ChangeDrinkRecipe(){
+    drinkName = document.querySelector(".drink-name"),
+    drinkCTA = document.querySelector("#drink-cta"),
+    drinkIntro = document.querySelector("#drink-intro"),
+    drinkHeader = document.querySelector("#drink-header");
+
+    if(pkg.mood.length > 0){
+        currentRecipe = recipes[pkg.mood][pkg.strength];
+        console.log("Test currentRecipe: Mood", currentRecipe);
+    }
+
+    else if(pkg.event.length > 0){
+        currentRecipe = recipes[pkg.event][pkg.strength];
+        console.log("Test currentRecipe: Event", currentRecipe);
+    }
+
+    drinkName.innerHTML = currentRecipe.name;
+    drinkCTA.innerHTML = currentRecipe.cta;
+    drinkIntro.innerHTML = currentRecipe.intro;
+    drinkHeader.style.backgroundImage = "url(../img/"+currentRecipe.image+")";
+    CreateInstructions();
+    CreateIngredients();
+}
+
 
 //====================================
 //             Default UI
@@ -500,54 +551,11 @@ function MenuToggle(el){
 ChangePageUI('startPage');
 
 
+
+
 //====================================
-//            Data Array
+//             TEST
 //====================================
-// var recipes = [
-//     {
-//         name: "Classic Martini",
-//         cta: "Nothing like a nice glass of Classic Martini. This is the perfect subtle drink for your mood today! Click below to view the full receipe and we hope you enjoy the drink.",
-//         intro: "Martinis are fun, fruity and quite simple to make. They consist of vodka and today we will be infusing blueberries and mango to provide the supple sweetness to the drink.",
-//         ingredients: [
-//             "1 1/2 ounces Vodka (Ultimat)",
-//             "1/2 ounce​ Orange Liqueur (Patron Citronge)",
-//             "2 ounces ​Blueberry Juice (fresh)",
-//             "1 ounce Mango Juice (fresh)",
-//             "Garnish: Fresh Blueberries",
-//         ],
-//         instructions: [
-//             "Gather the ingredients.",
-//             "Pour the ingredients into a cocktail shaker filled with ice.",
-//             "Shake well.",
-//             "Strain into a chilled cocktail glass.",
-//             "Garnish with fresh blueberries skewered on a cocktail pick or float them on top of the drink.",
-//             "Serve and enjoy!"
-//         ]
-//     },
-//     {
-//         name: "test",
-//         cta: "test2",
-//         intro: "test3",
-//         ingredients: [
-//             "asda",
-//             "dfgdfg",
-//             "dfgdfgdfg",
-//             "qweqwewq",
-//             "sdfsdfsdfs",
-//         ],
-//         instructions: [
-//             "alskdjlas",
-//             "askdaksd",
-//             "askdasldj",
-//             "aaaa",
-//             "avadvdvdsvad",
-//             "werwerwerwe"
-//         ]
-//     }
-// ];
-
-
-
 // console.log(pkg);
 // // var currentRecipe = recipes[pkg.mood][pkg.strength];
 // // update innerHTML with curRecipe.name;
@@ -557,33 +565,8 @@ ChangePageUI('startPage');
 //     drinkName.innerHTML = currentRecipe.name;
 // }
 
-
 // var viewRecipe = document.querySelector("#view-recipe");
 
 // viewRecipe.addEventListener("click", function(){
 //     test();
 // });
-
-
-
-
-//====================================================================
-// TEST FUNCTION
-//====================================================================
-// function CreateInstructions(){
-//     instructionsList = document.querySelector("#instructions-list");
-
-//     for(x = 0; x < recipes.length; x++){
-//         instructions = recipes[x].ingredients;
-//         console.log("Length of Instructions:", instructions);
-//     }
-
-//     for(i = 0; i < instructions.length; i++){
-//         li = document.createElement("li");
-//         li.innerText = instructions[i];
-//         instructionsList.appendChild(li);
-//         // console.log(li);
-//     }
-// }
-
-// CreateInstructions();

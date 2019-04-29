@@ -38,26 +38,6 @@
 .skyblue {color: var(--skyblue);}
 .white {color: white;}
 
-/* Dark overlay for background images */
-/* Put this class into the <body> */
-/* .bg-overlay {
-    position: relative;
-}
-
-.bg-overlay:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    content: "";
-
-    width: 100%;
-    height: 100%;
-
-    background-color: black;
-    opacity: 0.75;
-} */
-
 
 /******************************************
                 Typography
@@ -168,6 +148,7 @@ a.nav-item:hover {
 
     transition: letter-spacing 0.75s;
 }
+
 
 /******************************************
               Hamburger Menu
@@ -584,9 +565,9 @@ body {
     width: 100%;
     height: 13rem;
 
-    background-position: center 65%;
+    background-position: center;
     background-size: cover;
-    background-image: url(../img/martini-recipe.jpg);
+    background-image: url(../img/classic-martini.jpg);
 }
 
 .section-bottom {

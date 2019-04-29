@@ -136,18 +136,18 @@
     <!-- Drink Recommendation Page (5) -->
     <div id="recommend-page" class="partial-wrapper">
         <h3 class="recommendation-text white">Drink Recommendation</h3>
-        <h1 class="main-heading white uppercase" id="drink-name">Classic <span class="skyblue">Martini</span></h1>
+        <h1 class="main-heading white uppercase drink-name">Classic <span class="skyblue">Martini</span></h1>
 
         <section id="drink-section">
             <div class="icon-container">
                 <img src="img/martini_icon.svg" alt="Going Out">
             </div>
-            <p class="drink-info body-text white">Nothing like a nice glass of Classic Martini. This is the perfect subtle drink for your mood today! Click below to view the full receipe and we hope you enjoy the drink.</p>
+            <p id="drink-cta" class="drink-info body-text white">Nothing like a nice glass of Classic Martini. This is the perfect subtle drink for your mood today! Click below to view the full receipe and we hope you enjoy the drink.</p>
         </section>
 
         <section class="btn-section">
-            <button class="btn btn-text" onclick="ChangePage('recommendPage')">View Recipe</button>
-            <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('recommendPage')">Restart</button>
+            <button id="viewrecipe-btn" class="btn btn-text" onclick="ChangePage('recommendPage')">View Recipe</button>
+            <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('recommendPage')">Go Back</button>
         </section>
     </div>
 
@@ -157,8 +157,8 @@
 
         <div class="full-wrapper">
             <section id="recipe-intro" class="section-bottom">
-                <h1 class="main-heading">CLASSIC <span class="skyblue">MARTINI</span></h1>
-                <p class="body-text">Martinis are fun, fruity and quite simple to make. They consist of vodka and today we will be infusing blueberries and mango to provide the supple sweetness to the drink.</p><br><br>
+                <h1 class="main-heading drink-name">Classic <span class="skyblue">Martini</span></h1>
+                <p id="drink-intro" class="body-text">Martinis are fun, fruity and quite simple to make. They consist of vodka and today we will be infusing blueberries and mango to provide the supple sweetness to the drink.</p><br><br>
             </section>
 
             <section class="btn-section">
@@ -169,34 +169,34 @@
             <section id="ingredients-section" class="section-bottom">
                 <section id="ingredients-width">
                     <h1 class="main-heading skyblue"><span class="skyblue">INGREDIENTS</span></h1>
-                    <ol class="body-text-ingredients" id="ingredients-list">
-                        <li>1 1/2 ounces Vodka (Ultimat)</li>
+                    <ul class="body-text-ingredients" id="ingredients-list">
+                        <!-- <li>1 1/2 ounces Vodka (Ultimat)</li>
                         <li>1/2 ounce​ Orange Liqueur (Patron Citronge)</li>
                         <li>2 ounces ​Blueberry Juice (fresh)</li>
                         <li>1 ounce Mango Juice (fresh)</li>
-                        <li>Garnish: Fresh Blueberries</li>
-                    </ol>
+                        <li>Garnish: Fresh Blueberries</li> -->
+                    </ul>
                 </section>
             </section>
 
             <section id="instructions-section" class="section-bottom">
                 <h1 class="main-heading skyblue"><span class="skyblue">INSTRUCTIONS</span></h1>
                     <ol class="body-text" id="instructions-list">
-                        <li>Gather the ingredients.</li>
+                        <!-- <li>Gather the ingredients.</li>
                         <li>Pour the ingredients into a cocktail shaker filled with ice.</li>
                         <li>Shake well.</li>
                         <li>Strain into a chilled cocktail glass.</li>
                         <li>Garnish with fresh blueberries skewered on a cocktail pick or float them on top of the drink.</li>
-                        <li>Serve and enjoy!</li>
+                        <li>Serve and enjoy!</li> -->
                     </ol>
             </section>
 
-            <section id="animation-icon" class="section-bottom">
+            <!-- <section id="animation-icon" class="section-bottom">
                 <img src="img/martini_icon.svg" alt="martini glass">
-            </section>
+            </section> -->
         </div>
         <!-- Back To Top Icon -->
-        <a href="#drink-header"><img id="arrow-up" src="img/arrow-up.svg" alt="Back To Top Icon"></a>
+        <a href="#logo-container"><img id="arrow-up" src="img/arrow-up.svg" alt="Back To Top Icon"></a>
     </div>
 
     <!-- Link to External JS -->

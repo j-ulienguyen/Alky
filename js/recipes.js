@@ -2,12 +2,12 @@ var recipes = {
     // ==============================================
     happy:{
         light: {
-            name: "Peach Mojito",
+            name: "Peach <span class='skyblue'>Mojito</span>",
             cta: "An easy drink to reinvent with a variety of fruity twists! The Peach Mojito is the perfect and most refreshing drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "The Peach Mojito is a sweet and fruity twist on the classic Mojito. This refreshing cocktail consists of fresh peaches, mint, and rum which makes it the perfect remedy to cool down.",
             ingredients: [
                 "2 ounce White Rum",
-                "1 bunch Mint",
+                "1 Bunch Mint",
                 "¾ ounce Fresh Lime Juice",
                 "½ ounce Simple Syrup",
                 "½ Medium Ripe Peach",
@@ -18,10 +18,11 @@ var recipes = {
                 "Add rum, lime juice and ice, and shake.",
                 "Strain with a Hawthorne strainer into a Collins glass with ice.",
                 "Top with soda water and give a quick stir."
-            ]
+            ],
+            image: "peach-mojito.jpg"
         },
         medium: {
-            name: "Yakult Soju",
+            name: "Yakult <span class='skyblue'>Soju</span>",
             cta: "An unlikely pairing, Yakult Soju is refreshing, tangy, and delicious! With such simple ingredients, this makes it the perfect drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Who knew that Yakult, the iconic milky-yogurty drink, could be paired with alcohol. It seems unlikely, but paired with Soju you have yourself a sweet and creamy drink with a hint of alcohol!",
             ingredients: [
@@ -35,10 +36,11 @@ var recipes = {
                 "Fill the pitcher halfway with ice.",
                 "Add soju, Yakult and 7-Up.",
                 "Mix evenly with stirrer before serving."
-            ]
+            ],
+            image: "yakult-soju.jpg"
         },
         hard: {
-            name: "Long Island Iced Tea",
+            name: "Long Island <span class='skyblue'>Iced Tea</span>",
             cta: "With more than 4 ounces of alcohol against less than half that amount in mixers, the Long Island Iced Tea is the perfect drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "The Long Island Iced Tea is one hot mess of a drink with four different spirits slugging it out in a single glass. If you wanted a heavy drink, this cocktail is the perfect option for you. This cocktail is one of those mixed drinks that tastes good going down, but can quickly sneak up on you!",
             ingredients: [
@@ -58,13 +60,14 @@ var recipes = {
                 "Pour cocktail into a Collins or hurricane glass.",
                 "Top with splash of cola for color.",
                 "Garnish with a lemon slice."
-            ]
+            ],
+            image: "long-island-icedtea.jpg"
         },
     },
     // ==============================================
     heartbroken: {
         light: {
-            name: "Aperol Spritz",
+            name: "Aperol <span class='skyblue'>Spritz</span>",
             cta: "You’ll love sipping on this beautiful and refreshing cocktail. The Aperol Spritz is the perfect drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "An Aperol Spritz is a light and refreshing Italian cocktail that has the perfect balance of sweet and bitter (think orange peel and rhubarb). With only a handful of ingredients, you can throw this drink together in no time!",
             ingredients: [
@@ -79,10 +82,11 @@ var recipes = {
                 "Add prosecco, aperol and soda.",
                 "Stir gently to combine.",
                 "Garnish with a slice of orange."
-            ]
+            ],
+            image: "aperol-spritz.jpg"
         },
         medium: {
-            name: "Drunken Elephant",
+            name: "Drunken <span class='skyblue'>Elephant</span>",
             cta: "A different take on the classic Pina Colada, the Drunken Elephant has a savory thickness and flavour which makes it the perfect drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "The Drunken Elephant has the power to make any day a beach vacation. As a Pina Colada variation, this cocktail combines coconut rum and an egg to achieve the perfect balance of flavour and savory thickness.",
             ingredients: [
@@ -103,10 +107,11 @@ var recipes = {
                 "Double strain the drink into a tiki or tulip glass.",
                 "Add crushed ice",
                 "Garnish with grated cinnamon and mint."
-            ]
+            ],
+            image: "drunken-elephant.jpg"
         },
         hard: {
-            name: "Whiskey Smash",
+            name: "Whiskey <span class='skyblue'>Smash</span>",
             cta: "The Whiskey Smash has a combination of citrus and mint that makes it the perfect cocktail for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Think you don’t like whiskey? Think again! A cross between Mint Julep and a Whiskey Sour, the Whiskey Smash is a “gateway” drink into the wonderful world of whiskey-based potables. The Smash received its name for the sweet muddling action that goes between the sugar, lemon, and fresh mint leaves.",
             ingredients: [
@@ -122,19 +127,20 @@ var recipes = {
                 "Strain into rocks glass filled halfway with crushed ice.",
                 "Add more crushed ice to fill the drink to the rim of the glass.",
                 "Garnish with a mint sprig."
-            ]
+            ],
+            image: "whiskey-smash.jpg"
         }
     },
     // ==============================================
     fatigue: {
         light: {
-            name: "Irish Affogato",
+            name: "Irish <span class='skyblue'>Affogato</span>",
             cta: "The Irish Affogato takes a boozy twist on the traditional affogato which makes it the perfect drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "The Irish Coffee is one of the most popular drinks in the cocktail canon, and now you can have it for dessert. The Irish Affogato brings two great ideas together and takes a boozy twist on the traditional affogato made with coffee ice cream, cold-brew coffee, Irish whiskey and Bailey’s.",
             ingredients: [
                 "¾ Irish Whiskey",
                 "1⁄2 ounce Bailey’s",
-                "1 scoop Coffee Ice Cream",
+                "1 Scoop Coffee Ice Cream",
                 "1 1⁄2 ounce Cold-brew Coffee",
                 "Whipped Cream",
                 "Chocolate Shavings"
@@ -144,10 +150,11 @@ var recipes = {
                 "Add in the Irish whiskey and Bailey’s Irish cream to the mug.",
                 "Pour the cold-brewed coffee in to the mug.",
                 "Garnish with whipped cream and chocolate shavings."
-            ]
+            ],
+            image: "irish-affogato.jpg"
         },
         medium: {
-            name: "Milk Punch",
+            name: "Milk <span class='skyblue'>Punch</span>",
             cta: "The Milk Punch is a frothy cocktail that can be sipped day or night, making it the perfect drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Think of it as an easy, no-egg eggnog. Or think of it as a classic Southern drink that has an alluring blend of sweetness and richness with a deep-flavoured kick. With its fullness of flavours, silky texture, and nutmeg finish, the Milk Punch is definitely a drink you’d enjoy sipping on.",
             ingredients: [
@@ -161,10 +168,11 @@ var recipes = {
                 "Add all ingredients save for the garnish to a shaker tin with ice and shake.",
                 "Strain into a double old-fashioned glass and add fresh ice.",
                 "Garnish with grated nutmeg."
-            ]
+            ],
+            image: "milk-punch.jpg"
         },
         hard: {
-            name: "White Russian",
+            name: "White <span class='skyblue'>Russian</span>",
             cta: "The White Russian combines Kahlua, vodka, and cream to make the perfect cocktail for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "The White Russian is decadent and sophisticated. This cocktail is among the best and one of the easiest cocktails you will come across. Combining Kahlua, vodka, and cream and serving it on the rocks create a delicious alternative to adult milkshakes. What’s not to love?",
             ingredients: [
@@ -178,13 +186,14 @@ var recipes = {
                 "Finish up with a layer of cream.",
                 "Serve with a straw and stir it up.",
                 "Enjoy!"
-            ]
+            ],
+            image: "white-russian.jpg"
         }
     },
     // ==============================================
     stressed: {
         light: {
-            name: "Moscow Mule",
+            name: "Moscow <span class='skyblue'>Mule</span>",
             cta: "Moscow Mules are delightfully fizzy and has a nice blend of ginger beer, vodka, and fresh limes. This drink is the perfect cocktail for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Moscow Mules are refreshing and appropriate for any occasion thanks to the strong ginger flavour. They strike that elusive balance between spicy, sweet, and strong. It is definitely a crowd favourite that’s served up in its iconic chilled copper mug!",
             ingredients: [
@@ -198,10 +207,11 @@ var recipes = {
                 "Pour in the vodka and lime juice.",
                 "Fill the glass with ginger beer and gently swirl it with a spoon once to mix.",
                 "Garnish with a lime wedge, and enjoy!",
-            ]
+            ],
+            image: "moscow-mule.jpg"
         },
         medium: {
-            name: "Frozen Watermelon Margarita",
+            name: "Frozen Watermelon <span class='skyblue'>Margarita</span>",
             cta: "Made with real fruit and fresh juices, just one sip of the Frozen Watermelon Margarita can transport you to a happy place. This is the perfect drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "The Frozen Watermelon Margarita will be your next favourite thing to sip on during the summer season (or any season). Not only is this drink fruity, tasty and refreshing, but it is super easy to make as well. Sipping on one of these at any time of day… we can’t think of anything better!",
             ingredients: [
@@ -217,10 +227,11 @@ var recipes = {
                 "Add more ice if needed to get the consistency you like.",
                 "Pour into salt or sugar rimmed glasses and garnish with a lime wedge.",
                 "Enjoy!",
-            ]
+            ],
+            image: "watermelon-margarita.jpg"
         },
         hard: {
-            name: "Mezcal Negroni",
+            name: "Mezcal <span class='skyblue'>Negroni</span>",
             cta: "Skip the gin and add a touch of smoke to your drink with this Mezcal Negroni. This is the perfect drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Mezcal is the perfect replacement for gin in this take on the traditional Negroni. The mezcal adds a smoky note to the cocktail while maintaining its simplicity. The switch works well because mezcal is as assertive in flavours as gin is, and can stand up to flavourful tough customers like sweet vermouth and Campari. You’ll love the Mezcal Negroni!",
             ingredients: [
@@ -235,13 +246,14 @@ var recipes = {
                 "Strain into a rocks glass and add fresh ice, preferably larger cubes.",
                 "If you prefer the drink up, use a chilled coupe glass.",
                 "Garnish with an orange twist."
-            ]
+            ],
+            image: "mezcal-negroni.jpg"
         }
     },
     // ==============================================
     goingout: {
         light: {
-            name: "Raspberry Beer Margaritas ",
+            name: "Raspberry Beer <span class='skyblue'>Margaritas</span>",
             cta: "Not only is this drink light on the stomach but it’s also light in calories. Start off your nice with a cool raspberry flavoured beer margarita. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "This recipe is super simple to make and it’s less than 40 calories a glass! It is a super light, fun and refreshing drink to start off a long night. If you’re not too fond of raspberry you can also sub for the strawberry flavour. ",
             ingredients: [
@@ -259,10 +271,11 @@ var recipes = {
                 "Use the limeade concentrate can for 12 ounce measurements for the tequila and club soda.",
                 "Stir well to combine.",
                 "Serve over ice."
-            ]
+            ],
+            image: "raspberry-beer-margarita.jpg"
         },
         medium: {
-            name: "Classic Martini",
+            name: "Classic <span class='skyblue'>Martini</span>",
             cta: "Nothing like a nice glass of Classic Martini. This is the perfect subtle drink for your mood today! Click below to view the full receipe and we hope you enjoy the drink.",
             intro: "Martinis are fun, fruity and quite simple to make. They consist of vodka and today we will be infusing blueberries and mango to provide the supple sweetness to the drink.",
             ingredients: [
@@ -279,10 +292,11 @@ var recipes = {
                 "Strain into a chilled cocktail glass.",
                 "Garnish with fresh blueberries skewered on a cocktail pick or float them on top of the drink.",
                 "Serve and enjoy!"
-            ]
+            ],
+            image: "classic-martini.jpg"
         },
         hard: {
-            name: "Four Horsemen",
+            name: "Four <span class='skyblue'>Horsemen</span>",
             cta: "We see you’re ready to party HARD. Well we have the perfect drink for you. The four horsemen is a combination of 4 different types of whiskey. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "No need to choose your whiskey of the night, this drink combines all of them. This drink is easy to make but a bit less easy to take down. Fire at your will!",
             ingredients: [
@@ -294,13 +308,14 @@ var recipes = {
             instructions: [
                 "Combine all ingredients in large shot glass.",
                 "Cheers!"
-            ]
+            ],
+            image: "four-horsemen.jpg"
         }
     },
     // ===============================
     birthday: {
         light: {
-            name: "Sparkling Grapefruit Sangria",
+            name: "Sparkling Grapefruit <span class='skyblue'>Sangria</span>",
             cta: "Begin the celebration with a light and bubbly sangria. It will definitely set the mood! Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Sip on this sparkling sangria to celebrate the good times! The bubbliness comes from the Prosecco and there’s hints of grapefruit, tangerines and green grapes for an even sweeter experience. ",
             ingredients: [
@@ -318,12 +333,13 @@ var recipes = {
                 "Refrigerate until chilled, 30 minutes or up to 3 hours.",
                 "To serve, spoon some fruit and about 1 tablespoon liquid into each glass.",
                 "Divide bottles chilled prosecco among glasses."
-            ]
+            ],
+            image: "sparkling-grapefruit-sangria.jpg"
         },
         medium: {
-            name: "Shots for everyone! A recreation of a liquid chocolate cake for the birthday scene. Click below to view the full recipe and we hope you enjoy the drink.",
-            cta: "Vodka and Frangelico come together in this simple mix to somehow create the experience of liquid chocolate cake. Add a sugared rim to the glass, and you have a sweet, satisfying shooter that even the most shot-averse people will love.",
-            intro: "",
+            name: "Chocolate <span class='skyblue'>Cake Shot</span>",
+            cta: "Shots for everyone! A recreation of a liquid chocolate cake for the birthday scene. Click below to view the full recipe and we hope you enjoy the drink.",
+            intro: "Vodka and Frangelico come together in this simple mix to somehow create the experience of liquid chocolate cake. Add a sugared rim to the glass, and you have a sweet, satisfying shooter that even the most shot-averse people will love.",
             ingredients: [
                 "¾ ounce Vodka",
                 "¾ ounce Frangelico",
@@ -336,10 +352,11 @@ var recipes = {
                 "Add Frangelico and vodka to a mixing glass with ice.",
                 "Stir to chill and incorporate.",
                 "Strain into the sugar-rimmed shot glass and serve with a lemon wedge, if desired."
-            ]
+            ],
+            image: "chocolate-cake-shot.jpg"
         },
         hard: {
-            name: "Fish House Punch",
+            name: "Fish House <span class='skyblue'>Punch</span>",
             cta: "Yay! The perfect drink for your night is also one of the most iconic fruit punches. Beware - there will be a LOT of rum. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "A nice mix of rum, tea and orange is the secret to the Fish House Punch. This recipe gives a nice kick and is best served chill.",
             ingredients: [
@@ -356,13 +373,14 @@ var recipes = {
                 "In a large bowl whisk together all ingredients, except for the garnish.",
                 "Place one very large ice block into an extra large punch bowl and pour the punch over the ice.",
                 "Garnish with lemon wheels and serve with a ladle."
-            ]
+            ],
+            image: "fish-house-punch.jpg"
         }
     },
     // ===============================
     relaxing: {
         light: {
-            name: "Frose",
+            name: "<span class='skyblue'>Frose</span>",
             cta: "Nothing beats a sweet light frose for a relaxing day. One of the most refreshing drinks alone or with friends. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Froze is essentially a frozen margarita but - with wine. It blends to be the cutest pink colour and taste even sweeter. Enjoy this drink by the pool or even indoors. ",
             ingredients: [
@@ -370,16 +388,16 @@ var recipes = {
                 "2 cups Strawberries, hulled and halved, plus extra for garnish",
                 "½ cup Superfine Sugar",
                 "⅓ cup Lemon Juice"
-
             ],
             instructions: [
                 "Pour the rose, strawberries, sugar and lemon juice in a blender and puree until smooth.",
                 "Pour into an ice cream maker and churn on the coldest setting until thick and slushy, 45 minutes to 1 hour.",
                 "Pour into wine glasses and garnish with strawberries."
-            ]
+            ],
+            image: "frose.jpg"
         },
         medium: {
-            name: "Tia Mia ",
+            name: "Tia <span class='skyblue'>Mia</span>",
             cta: "A medium cocktail for a relaxing time - the Tia Mia is a take on the classic tiki cocktail. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "A mix of vanilla-rich Jamaican rum with subtly smoky mezcal, is the specialty in this cocktail. A bit stronger on the alcohol scale, but that’s not a worry for you if you love rum.",
             ingredients: [
@@ -398,10 +416,11 @@ var recipes = {
                 "Fill with ice cubes and shake well.",
                 "Strain into a chilled rocks glass filled with crushed ice.",
                 "Garnish with the mint sprig, lime wheel and orchid."
-            ]
+            ],
+            image: "tia-mia.jpg"
         },
         hard: {
-            name: "Texas Tiki",
+            name: "Texas <span class='skyblue'>Tiki</span>",
             cta: "Woo we got a heavy drinker here! The texas tiki is the ideal drink for you - the secret to the blue colour is the blue curacao. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Not only is this drink bright and beautiful but it tastes phenomenal too. Vibrant fruitiness of pineapple juice will pop with the addition of honey syrup amaretto for sweetness. This drink is heavy but it is the ideal sipper.",
             ingredients: [
@@ -423,13 +442,14 @@ var recipes = {
                 "Using a Hawthorne strainer, strain the cocktail into a clear tiki mug with crushed ice.",
                 "Add more crushed ice if needed so that the cocktail fills the glass.",
                 "Garnish with a bouquet of fresh mint, edible flowers, pineapple leaves and a tiki umbrella."
-            ]
+            ],
+            image: "texas-tiki.jpg"
         }
     },
     // ===============================
     gamenight: {
         light: {
-            name: "I Love You So Matcha",
+            name: "I Love You So <span class='skyblue'>Matcha</span>",
             cta: "We all know how intense game night can get so the perfect starter drink is green tea! Not just plain green tea, but with a hint of sake. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Who knew matcha can taste so good with sake? The refreshingness of sake perfectly complements the earthiness of matcha. The key to making the drink just right is to use premium-grade matcha that won’t muddy the cocktail up.",
             ingredients: [
@@ -443,10 +463,11 @@ var recipes = {
                 "Add sake and condensed milk.",
                 "Add ice into a shaker and then pout in matcha mixture.",
                 "Shake and serve in a highball."
-            ]
+            ],
+            image: "matcha.jpg"
         },
         medium: {
-            name: "Mexican Bulldog",
+            name: "Mexican <span class='skyblue'>Bulldog</span>",
             cta: "Nothing like a classic Mexican Bulldog, made by simply dunking a Corona into a frozen Margarita, is almost perfect. Easy and perfect for game night. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "All you need are 3 simple ingredients: corona, lime juice and tequila. A medium weight drink for you to sip on while you win game night. The blended contents with crushed ice will turn the drink into a slushy form.",
             ingredients: [
@@ -463,10 +484,11 @@ var recipes = {
                 "Combine all other ingredients except for the beer in a blender, blend until smooth and pour into the glass.",
                 "Holding your thumb over the opening of the bottle of beer, quickly overturn the bottle into the glass, removing your thumb just before submerging it into the glass.",
                 "Drink with a straw, ideally with a friend."
-            ]
+            ],
+            image: "mexican-bulldog.jpg"
         },
         hard: {
-            name: "Old Fashion",
+            name: "Old <span class='skyblue'>Fashion</span>",
             cta: "Tada! The drink for you is an Old Fashion. Watch out because this is a strong one. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "The Old Fashion is almost purely bourbon whiskey so it’s not recommended for the light hearted. However, since you chose hard we assume you’re a heavier weight. This recipe calls for a splash of peeled orange for a bitter spice.",
             ingredients: [
@@ -475,7 +497,6 @@ var recipes = {
                 "2 dashes Angostura Bitters",
                 "Ice Cubes",
                 "Orange Peel, for garnish",
-
             ],
             instructions: [
                 "Place the bourbon, simple syrup, and Angostura bitters in a mixing glass.",
@@ -483,7 +504,8 @@ var recipes = {
                 "Strain the cocktail into a rocks glass over one large ice cube, or cubed ice.",
                 "Pare an orange peel and express the oils from the back of the peel over the old fashioned.",
                 "Rub the peel around the rim of the glass and drop the peel into the glass.",
-            ]
+            ],
+            image: "old-fashion.jpg"
         }
     }
 }
