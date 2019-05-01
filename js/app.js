@@ -34,30 +34,6 @@ var handler = {
             ChangePageUI(value);
             console.log("ChangePageUI Value:", value);
         }
-
-        if(props == "name"){
-
-        }
-
-        if(props == "numPlayers"){
-
-        }
-
-        if(props == "mood"){
-
-        }
-
-        if(props == "event"){
-
-        }
-
-        if(props == "strength"){
-
-        }
-
-        if(props == "recipe"){
-
-        }
     }
 }
 
@@ -167,16 +143,7 @@ function ChangePageBack(currentPage){
     }
 
     else if(currentPage == "moodPage" || currentPage == "eventsPage"){
-        if(currentPage == "moodPage"){
-            // Reset mood selection
-            pkg.mood = "";
-        }
-
-        else if(currentPage == "eventsPage"){
-            // Reset event selection
-            pkg.event = "";
-        }
-
+        RemoveActiveIcon();
         pkg.currentPage = "playersPage";
     }
 
@@ -188,9 +155,11 @@ function ChangePageBack(currentPage){
         else if(pkg.numPlayers == "multiplayer"){
             pkg.currentPage = "eventsPage";
         }
+
+        RemoveActiveIcon();
     }
 
-    else if(currentPage == "recommendPage"){
+    else if(currentPage == "recommendPage" || currentPage == "recipePage"){
         // Restart from beginning
         // pkg.currentPage = "startPage";
 
@@ -363,6 +332,28 @@ function ActiveIcon(el){
     }
 }
 
+function RemoveActiveIcon(){
+    if(currentPage == "moodPage" || currentPage == "eventsPage"){
+        icons = document.querySelectorAll(".icons");
+
+        for(i = 0; i < icons.length; i++){
+            icons[i].classList.remove("active-icon");
+        }
+        // Reset mood and event selection
+        pkg.mood = "";
+        pkg.event = "";
+    }
+
+    else if(currentPage == "strengthPage"){
+        strengthIcon = document.querySelectorAll(".strength-icon");
+
+        for(i = 0; i < strengthIcon.length; i++){
+            strengthIcon[i].classList.remove("active-icon");
+        }
+        // Reset strength selection
+        pkg.strength = "";
+    }
+}
 
 //====================================
 //          Functions - UI
@@ -391,7 +382,7 @@ function ChangeLogo(){
 
     else if(currentPage == "recipePage"){
         // Smaller logo and container size
-        logoContainer.style.padding = "9vh 0";
+        // logoContainer.style.padding = "9vh 0";
         logo.style.width = 8 + "rem";
     }
 }
@@ -409,7 +400,6 @@ function ChangePageUI(currentPage){
         recipePage.style.display = "none";
 
         bubblesBG.style.height = 100 + "vh";
-        document.querySelector(".btn").style.marginBottom = "15%";
     }
 
     else if(currentPage == "playersPage"){
@@ -423,7 +413,7 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "none";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 112 + "vh";
+        bubblesBG.style.height = 100 + "vh";
     }
 
     else if(currentPage == "moodPage"){
@@ -437,7 +427,7 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "none";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 110 + "vh";
+        bubblesBG.style.height = 100 + "vh";
     }
 
     else if(currentPage == "eventsPage"){
@@ -451,7 +441,7 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "none";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 110 + "vh";
+        bubblesBG.style.height = 100 + "vh";
     }
 
     else if(currentPage == "strengthPage"){
@@ -465,7 +455,7 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "none";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 109 + "vh";
+        bubblesBG.style.height = 100 + "vh";
     }
 
     else if(currentPage == "recommendPage"){
@@ -479,7 +469,7 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "flex";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 109 + "vh";
+        bubblesBG.style.height = 105 + "vh";
     }
 
     else if(currentPage == "recipePage"){
@@ -586,7 +576,7 @@ function ChangeDrinkRecipe(){
     drinkIcon.src = "img/"+ currentRecipe.icon;
     drinkCTA.innerHTML = currentRecipe.cta;
     drinkIntro.innerHTML = currentRecipe.intro;
-    drinkHeader.style.backgroundImage = "url(../img/"+currentRecipe.image+")";
+    drinkHeader.style.backgroundImage = "url(../img/hero/"+currentRecipe.image+")";
     CreateInstructions();
     CreateIngredients();
 }
