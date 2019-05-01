@@ -53,7 +53,7 @@
             <br>
             <br>
             <p class="body-text white">Hi, what's <span class="skyblue">your name?</span></p>
-            <input type="text" name="name" id="name-input" placeholder="Enter Your Name" onkeyup="StoreName(this)">
+            <input type="text" name="name" id="name-input" placeholder="Enter Your Name" onkeyup="StoreName()">
         </section>
 
         <section class="btn-section">
@@ -136,13 +136,13 @@
     <!-- Drink Recommendation Page (5) -->
     <div id="recommend-page" class="partial-wrapper">
         <h3 class="recommendation-text white">Drink Recommendation</h3>
-        <h1 class="main-heading white uppercase drink-name">Classic <span class="skyblue">Martini</span></h1>
+        <h1 class="main-heading white uppercase drink-name">{Drink Name}</h1>
 
         <section id="drink-section">
             <div class="icon-container">
-                <img src="img/martini_icon.svg" alt="Going Out">
+                <img src="img/classic-martini.svg" alt="Drink Icon" id="drink-icon">
             </div>
-            <p id="drink-cta" class="drink-info body-text white">Nothing like a nice glass of Classic Martini. This is the perfect subtle drink for your mood today! Click below to view the full receipe and we hope you enjoy the drink.</p>
+            <p id="drink-cta" class="drink-info body-text white">{Drink CTA}</p>
         </section>
 
         <section class="btn-section">
@@ -155,10 +155,14 @@
     <div id="recipe-page">
         <section id="drink-header" class="section-bottom"></section>
 
+        <h3 id="recommend-name">{Your Name}</h3>
+        <br>
+
         <div class="full-wrapper">
-            <section id="recipe-intro" class="section-bottom">
-                <h1 class="main-heading drink-name">Classic <span class="skyblue">Martini</span></h1>
-                <p id="drink-intro" class="body-text">Martinis are fun, fruity and quite simple to make. They consist of vodka and today we will be infusing blueberries and mango to provide the supple sweetness to the drink.</p><br><br>
+            <section id="recipe-intro">
+                <h3 class="recommendation-text white">Here's your drink recipe</h3>
+                <h1 class="main-heading drink-name uppercase">{Drink Name}</h1>
+                <p id="drink-intro" class="body-text">{Drink Introduction}</p>
             </section>
 
             <section class="btn-section">
@@ -166,29 +170,16 @@
                 <a href="#instructions-section"><button class="btn btn-text">Instructions</button></a>
             </section>
 
-            <section id="ingredients-section" class="section-bottom">
+            <section id="ingredients-section">
                 <section id="ingredients-width">
-                    <h1 class="main-heading skyblue"><span class="skyblue">INGREDIENTS</span></h1>
-                    <ul class="body-text-ingredients" id="ingredients-list">
-                        <!-- <li>1 1/2 ounces Vodka (Ultimat)</li>
-                        <li>1/2 ounce​ Orange Liqueur (Patron Citronge)</li>
-                        <li>2 ounces ​Blueberry Juice (fresh)</li>
-                        <li>1 ounce Mango Juice (fresh)</li>
-                        <li>Garnish: Fresh Blueberries</li> -->
-                    </ul>
+                    <h1 class="main-heading uppercase skyblue"><span class="skyblue">Ingredients</span></h1>
+                    <ul class="body-text-dark" id="ingredients-list"></ul>
                 </section>
             </section>
 
-            <section id="instructions-section" class="section-bottom">
-                <h1 class="main-heading skyblue"><span class="skyblue">INSTRUCTIONS</span></h1>
-                    <ol class="body-text" id="instructions-list">
-                        <!-- <li>Gather the ingredients.</li>
-                        <li>Pour the ingredients into a cocktail shaker filled with ice.</li>
-                        <li>Shake well.</li>
-                        <li>Strain into a chilled cocktail glass.</li>
-                        <li>Garnish with fresh blueberries skewered on a cocktail pick or float them on top of the drink.</li>
-                        <li>Serve and enjoy!</li> -->
-                    </ol>
+            <section id="instructions-section">
+                <h1 class="main-heading uppercase skyblue"><span class="skyblue">Instructions</span></h1>
+                <ol class="body-text" id="instructions-list"></ol>
             </section>
 
             <!-- <section id="animation-icon" class="section-bottom">

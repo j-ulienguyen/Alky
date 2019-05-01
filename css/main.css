@@ -23,6 +23,8 @@
     --indigo: #451380;
     --steelblue: #4d71bc;
     --deepskyblue: #369acd;
+
+    scroll-behavior: smooth;
 }
 
 * {
@@ -54,7 +56,7 @@ body {
     color: #fff;
 }
 
-.body-text-ingredients {
+.body-text-dark {
     font-family: "Nunito Sans", sans-serif;
     font-size: 1em;
     font-weight: 300;
@@ -149,6 +151,18 @@ a.nav-item:hover {
     transition: letter-spacing 0.75s;
 }
 
+#recommend-name {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.25em;
+    text-transform: uppercase;
+
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
 
 /******************************************
               Hamburger Menu
@@ -200,7 +214,6 @@ a.nav-item:hover {
     width: 100%;
     height: 100vh;
 
-    /* border: 2px solid red; */
     background-color: rgba(51, 51, 51, 0.97);
 
     transition: opacity 0.65s;
@@ -245,7 +258,6 @@ a.nav-item:hover {
 }
 
 .btn-min:hover {
-    /* TEST */
     color: var(--skyblue);
     transition: color 0.3s;
 }
@@ -287,13 +299,7 @@ body {
 #bubbles-container {
     position: absolute;
     width: 100%;
-
-    /* FIX HEIGHT FOR TALLER PAGES */
-    /* TEST */
-    /* min-height: 100vh; */
-    /* overflow: hidden; */
     height: 100vh;
-
     pointer-events: none;
 }
 
@@ -409,14 +415,9 @@ body {
     align-content: space-between;
 
     width: 85%;
-
-    /* TEST */
-    /* min-height: 68vh; */
-    /* overflow: hidden; */
     height: 68vh;
 
     margin: 0 auto;
-    /* border: 2px solid red; */
 }
 
 .full-wrapper {
@@ -426,13 +427,9 @@ body {
     align-content: space-between;
 
     width: 100%;
-    /* TEST */
-    /* min-height: 68vh; */
-    /* overflow: hidden; */
     height: 68vh;
 
     margin: 0 auto;
-    /* border: 2px solid red; */
 }
 
 
@@ -445,12 +442,10 @@ body {
     text-align: center;
     margin: 0 auto;
     padding: 10vh 0;
-    /* background-color: lightcoral; */
 }
 
 #logo {
     width: 15rem;
-    /* border: 2px solid red; */
 }
 
 
@@ -476,8 +471,6 @@ body {
 .btn-section {
     text-align: center;
     margin-bottom: 1.5rem;
-    /* width: 100%; */
-    /* border: 2px solid lightgreen; */
 }
 
 
@@ -486,12 +479,10 @@ body {
 *******************************************/
 #players-section {
     text-align: center;
-    /* border: 1px solid red; */
 }
 
 .icons-big {
     width: 90%;
-    /* border: 1px solid red; */
 }
 
 .icons-big:hover {
@@ -510,7 +501,6 @@ body {
     justify-content: space-evenly;
 
     margin-bottom: 1.5rem;
-    /* border: 2px solid green; */
 }
 
 .icons {
@@ -529,14 +519,12 @@ body {
 *******************************************/
 #strength-section {
     text-align: center;
-    /* border: 1px solid red; */
 }
 
 .strength-icon {
     width: 90%;
     margin-bottom: 0.75rem;
 }
-
 
 .strength-icon:hover {
     position: relative;
@@ -563,19 +551,16 @@ body {
 *******************************************/
 #drink-header {
     width: 100%;
-    height: 13rem;
+    height: 25rem;
 
     background-position: center;
     background-size: cover;
     background-image: url(../img/classic-martini.jpg);
 }
 
-.section-bottom {
-    margin-bottom: 2rem;
-}
-
-.body-text {
-    text-align: center;
+#recommend-name {
+    width: 85%;
+    margin: 2rem auto;
 }
 
 #recipe-intro {
@@ -583,55 +568,66 @@ body {
     flex-direction: column;
 
     width: 85%;
-    margin: auto;
+    margin: 0 auto;
+}
+
+#drink-intro {
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 #ingredients-section {
     color: var(--darkgrey);
-    position: relative;
-    top: 2rem;
-
     background-color: #fff;
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 #ingredients-width {
-    width: 85%;
+    width: 65%;
     text-align: center;
-
     margin: 0 auto;
-    padding-bottom: 2rem;
 }
 
- #instructions-section {
+#ingredients-list li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+
+#ingredients-list li:before {
+    color: var(--skyblue);
+    content: "\2022"; /* Bullet unicode */
+    margin-left: -1.25rem;
+    margin-right: 1rem;
+}
+
+#instructions-section {
     color: var(--darkgrey);
     width: 75%;
 
-    position: relative;
-    top: 2rem;
-
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
-ol li::before {
+#instructions-list li::before {
     width: 1em;
     content: counter(li);
     color: var(--skyblue);
     font-weight: bold;
-    text-align: right;
 
-    margin-left: -1em;
-    margin-right: 0.5em;
+    margin-left: -1.25rem;
+    margin-right: 0.5rem;
 }
 
-li {
-    counter-increment: li;
+
+#instructions-list li {
     list-style: none;
-    text-align: left;
+    counter-increment: li;
+    margin-bottom: 0.75rem;
 }
 
-@keyframes popup {
+
+/* @keyframes popup {
   0% {
     transform: translateY(150px);
   }
@@ -644,29 +640,28 @@ li {
   100% {
     transform: translateY(150px);
   }
-}
+} */
 
-#animation-icon {
+/* #animation-icon {
     transform: translateY(150px);
     animation: popup 6s 4s ease infinite;
 }
 
 img.cls-1 {
-    /* Don't display icon box */
     display: none;
-}
+} */
 
 #arrow-up {
+    /* Back To Top - Button */
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 99;
-
     width: 2.5em;
 }
 
 /******************************************
-
+           Starting Point / For JS
 *******************************************/
 /* Display will be defined in JS */
 /* Start with nothing */
@@ -682,8 +677,7 @@ img.cls-1 {
 
 /* When a button is selected - White glow will appear */
 .active-icon {
-    border-radius: 0.6em;
+    border-radius: 0.8em;
     box-shadow: 0 0 8px white;
-
     transition: box-shadow 0.3s;
 }

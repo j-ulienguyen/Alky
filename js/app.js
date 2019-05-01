@@ -66,11 +66,13 @@ var prox = new Proxy(pkg, handler);
 //====================================
 //          Functions - State
 //====================================
-function StoreName(el){
-    pkg.name = el.value;
+function StoreName(){
+    nameInput = document.querySelector("#name-input").value;
+
+    pkg.name = nameInput;
     prox.name = pkg.name;
 
-    console.log("First Name: ", el.value);
+    console.log("First Name: ", nameInput);
     console.log("Pkg Value: ", pkg.name);
     console.log("Prox Value: ", prox.name);
 }
@@ -78,7 +80,12 @@ function StoreName(el){
 function ChangePage(currentPage){
     // Go to next page
     if(currentPage == "startPage"){
-        pkg.currentPage = "playersPage";
+        if(pkg.name == ""){
+            alert("Please type in your name.");
+            pkg.currentPage = "startPage";
+        } else {
+            pkg.currentPage = "playersPage";
+        }
     }
 
     else if(currentPage == "playersPage"){
@@ -132,13 +139,12 @@ function ChangePage(currentPage){
         }
             else{
                 pkg.currentPage = "recommendPage";
-                // TEST ========================
                 ChangeDrinkRecipe();
             }
-    }
+        }
 
-    else if(currentPage == "recommendPage"){
-        pkg.currentPage = "recipePage";
+        else if(currentPage == "recommendPage"){
+            pkg.currentPage = "recipePage";
     }
 
     prox.currentPage = pkg.currentPage;
@@ -152,6 +158,12 @@ function ChangePageBack(currentPage){
     // Go back to previous page
     if(currentPage == "playersPage"){
         pkg.currentPage = "startPage";
+
+        nameInput = document.querySelector("#name-input");
+        // Clear field
+        nameInput.value = "";
+        // Reset name input
+        pkg.name = "";
     }
 
     else if(currentPage == "moodPage" || currentPage == "eventsPage"){
@@ -368,19 +380,18 @@ function ChangeLogo(){
         logo.style.width = 15 + "rem";
     }
 
-    else if(
-        currentPage == "playersPage" ||
-        currentPage == "moodPage" ||
-        currentPage == "eventsPage" ||
-        currentPage == "strengthPage" ||
-        currentPage == "recommendPage"){
+    else if(currentPage == "playersPage" ||
+            currentPage == "moodPage" ||
+            currentPage == "eventsPage" ||
+            currentPage == "strengthPage" ||
+            currentPage == "recommendPage"){
             // Smaller logo
             logo.style.width = 8 + "rem";
-        }
+    }
 
     else if(currentPage == "recipePage"){
-        // logoContainer.style.display = "none";
-
+        // Smaller logo and container size
+        logoContainer.style.padding = "9vh 0";
         logo.style.width = 8 + "rem";
     }
 }
@@ -397,7 +408,8 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "none";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 102 + "vh";
+        bubblesBG.style.height = 100 + "vh";
+        document.querySelector(".btn").style.marginBottom = "15%";
     }
 
     else if(currentPage == "playersPage"){
@@ -453,7 +465,7 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "none";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 110 + "vh";
+        bubblesBG.style.height = 109 + "vh";
     }
 
     else if(currentPage == "recommendPage"){
@@ -467,7 +479,7 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "flex";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 115 + "vh";
+        bubblesBG.style.height = 109 + "vh";
     }
 
     else if(currentPage == "recipePage"){
@@ -480,6 +492,8 @@ function ChangePageUI(currentPage){
         strengthPage.style.display = "none";
         recommendPage.style.display = "none";
         recipePage.style.display = "block";
+
+        bubblesBG.style.height = 180 + "vh";
     }
 }
 
@@ -526,8 +540,31 @@ function CreateInstructions(){
     }
 }
 
+function HeyYourName(){
+    recommendName = document.querySelector("#recommend-name");
+
+    // Mood-based - "Hey {Your Name}!"
+    if(pkg.mood.length > 0){
+        recommendName.innerHTML = "Hey <span class='skyblue'>" + pkg.name + "!</span>";
+    }
+
+    // Event-based - "Hey {Your Name} & Friends!"
+    else if(pkg.event.length > 0){
+        recommendName.style.fontSize = "1.75em";
+
+        if(pkg.name.length <= 7){
+            // Fit into one line
+            recommendName.innerHTML = "Hey <span class='skyblue'>" + pkg.name + "</span> & friends!";
+        } else {
+            // Break into next line
+            recommendName.innerHTML = "Hey <span class='skyblue'>" + pkg.name + "</span><br>& friends!";
+        }
+    }
+}
+
 function ChangeDrinkRecipe(){
-    drinkName = document.querySelector(".drink-name"),
+    drinkName = document.querySelectorAll(".drink-name"),
+    drinkIcon = document.querySelector("#drink-icon"),
     drinkCTA = document.querySelector("#drink-cta"),
     drinkIntro = document.querySelector("#drink-intro"),
     drinkHeader = document.querySelector("#drink-header");
@@ -542,7 +579,11 @@ function ChangeDrinkRecipe(){
         console.log("Test currentRecipe: Event", currentRecipe);
     }
 
-    drinkName.innerHTML = currentRecipe.name;
+    HeyYourName();
+    // console.log(drinkName); // Determine class nodes
+    drinkName[0].innerHTML = currentRecipe.name; // Drink Name on Recommend Page
+    drinkName[1].innerHTML = currentRecipe.name; // Drink Name on Recipe Page
+    drinkIcon.src = "img/"+ currentRecipe.icon;
     drinkCTA.innerHTML = currentRecipe.cta;
     drinkIntro.innerHTML = currentRecipe.intro;
     drinkHeader.style.backgroundImage = "url(../img/"+currentRecipe.image+")";
@@ -555,24 +596,3 @@ function ChangeDrinkRecipe(){
 //             Default UI
 //====================================
 ChangePageUI('startPage');
-
-
-
-
-//====================================
-//             TEST
-//====================================
-// console.log(pkg);
-// // var currentRecipe = recipes[pkg.mood][pkg.strength];
-// // update innerHTML with curRecipe.name;
-
-// function test(){
-//     drinkName = document.querySelector("#drink-name");
-//     drinkName.innerHTML = currentRecipe.name;
-// }
-
-// var viewRecipe = document.querySelector("#view-recipe");
-
-// viewRecipe.addEventListener("click", function(){
-//     test();
-// });

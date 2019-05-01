@@ -19,6 +19,7 @@ var recipes = {
                 "Strain with a Hawthorne strainer into a Collins glass with ice.",
                 "Top with soda water and give a quick stir."
             ],
+            icon: "peach-mojito.svg",
             image: "peach-mojito.jpg"
         },
         medium: {
@@ -37,10 +38,11 @@ var recipes = {
                 "Add soju, Yakult and 7-Up.",
                 "Mix evenly with stirrer before serving."
             ],
+            icon: "yakult-soju.svg",
             image: "yakult-soju.jpg"
         },
         hard: {
-            name: "Long Island <span class='skyblue'>Iced Tea</span>",
+            name: "Long Island <br><span class='skyblue'>Iced Tea</span>",
             cta: "With more than 4 ounces of alcohol against less than half that amount in mixers, the Long Island Iced Tea is the perfect drink for your mood today. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "The Long Island Iced Tea is one hot mess of a drink with four different spirits slugging it out in a single glass. If you wanted a heavy drink, this cocktail is the perfect option for you. This cocktail is one of those mixed drinks that tastes good going down, but can quickly sneak up on you!",
             ingredients: [
@@ -61,6 +63,7 @@ var recipes = {
                 "Top with splash of cola for color.",
                 "Garnish with a lemon slice."
             ],
+            icon: "long-island-icedtea.svg",
             image: "long-island-icedtea.jpg"
         },
     },
@@ -83,6 +86,7 @@ var recipes = {
                 "Stir gently to combine.",
                 "Garnish with a slice of orange."
             ],
+            icon: "aperol-spritz.svg",
             image: "aperol-spritz.jpg"
         },
         medium: {
@@ -108,6 +112,7 @@ var recipes = {
                 "Add crushed ice",
                 "Garnish with grated cinnamon and mint."
             ],
+            icon: "drunken-elephant.svg",
             image: "drunken-elephant.jpg"
         },
         hard: {
@@ -128,6 +133,7 @@ var recipes = {
                 "Add more crushed ice to fill the drink to the rim of the glass.",
                 "Garnish with a mint sprig."
             ],
+            icon: "whiskey-smash.svg",
             image: "whiskey-smash.jpg"
         }
     },
@@ -151,6 +157,7 @@ var recipes = {
                 "Pour the cold-brewed coffee in to the mug.",
                 "Garnish with whipped cream and chocolate shavings."
             ],
+            icon: "irish-affogato.svg",
             image: "irish-affogato.jpg"
         },
         medium: {
@@ -169,6 +176,7 @@ var recipes = {
                 "Strain into a double old-fashioned glass and add fresh ice.",
                 "Garnish with grated nutmeg."
             ],
+            icon: "milk-punch.svg",
             image: "milk-punch.jpg"
         },
         hard: {
@@ -187,6 +195,7 @@ var recipes = {
                 "Serve with a straw and stir it up.",
                 "Enjoy!"
             ],
+            icon: "white-russian.svg",
             image: "white-russian.jpg"
         }
     },
@@ -208,6 +217,7 @@ var recipes = {
                 "Fill the glass with ginger beer and gently swirl it with a spoon once to mix.",
                 "Garnish with a lime wedge, and enjoy!",
             ],
+            icon: "moscow-mule.svg",
             image: "moscow-mule.jpg"
         },
         medium: {
@@ -228,6 +238,7 @@ var recipes = {
                 "Pour into salt or sugar rimmed glasses and garnish with a lime wedge.",
                 "Enjoy!",
             ],
+            icon: "watermelon-margarita.svg",
             image: "watermelon-margarita.jpg"
         },
         hard: {
@@ -247,6 +258,7 @@ var recipes = {
                 "If you prefer the drink up, use a chilled coupe glass.",
                 "Garnish with an orange twist."
             ],
+            icon: "mezcal-negroni.svg",
             image: "mezcal-negroni.jpg"
         }
     },
@@ -272,6 +284,7 @@ var recipes = {
                 "Stir well to combine.",
                 "Serve over ice."
             ],
+            icon: "raspberry-beer-margarita.svg",
             image: "raspberry-beer-margarita.jpg"
         },
         medium: {
@@ -293,6 +306,7 @@ var recipes = {
                 "Garnish with fresh blueberries skewered on a cocktail pick or float them on top of the drink.",
                 "Serve and enjoy!"
             ],
+            icon: "classic-martini.svg",
             image: "classic-martini.jpg"
         },
         hard: {
@@ -309,6 +323,7 @@ var recipes = {
                 "Combine all ingredients in large shot glass.",
                 "Cheers!"
             ],
+            icon: "four-horsemen.svg",
             image: "four-horsemen.jpg"
         }
     },
@@ -334,10 +349,11 @@ var recipes = {
                 "To serve, spoon some fruit and about 1 tablespoon liquid into each glass.",
                 "Divide bottles chilled prosecco among glasses."
             ],
+            icon: "sparkling-grapefruit-sangria.svg",
             image: "sparkling-grapefruit-sangria.jpg"
         },
         medium: {
-            name: "Chocolate <span class='skyblue'>Cake Shot</span>",
+            name: "Chocolate <br><span class='skyblue'>Cake Shot</span>",
             cta: "Shots for everyone! A recreation of a liquid chocolate cake for the birthday scene. Click below to view the full recipe and we hope you enjoy the drink.",
             intro: "Vodka and Frangelico come together in this simple mix to somehow create the experience of liquid chocolate cake. Add a sugared rim to the glass, and you have a sweet, satisfying shooter that even the most shot-averse people will love.",
             ingredients: [
@@ -353,6 +369,7 @@ var recipes = {
                 "Stir to chill and incorporate.",
                 "Strain into the sugar-rimmed shot glass and serve with a lemon wedge, if desired."
             ],
+            icon: "chocolate-cake-shot.svg",
             image: "chocolate-cake-shot.jpg"
         },
         hard: {
@@ -374,6 +391,7 @@ var recipes = {
                 "Place one very large ice block into an extra large punch bowl and pour the punch over the ice.",
                 "Garnish with lemon wheels and serve with a ladle."
             ],
+            icon: "fish-house-punch.svg",
             image: "fish-house-punch.jpg"
         }
     },
@@ -394,6 +412,7 @@ var recipes = {
                 "Pour into an ice cream maker and churn on the coldest setting until thick and slushy, 45 minutes to 1 hour.",
                 "Pour into wine glasses and garnish with strawberries."
             ],
+            icon: "frose.svg",
             image: "frose.jpg"
         },
         medium: {
@@ -417,6 +436,7 @@ var recipes = {
                 "Strain into a chilled rocks glass filled with crushed ice.",
                 "Garnish with the mint sprig, lime wheel and orchid."
             ],
+            icon: "tia-mia.svg",
             image: "tia-mia.jpg"
         },
         hard: {
@@ -443,6 +463,7 @@ var recipes = {
                 "Add more crushed ice if needed so that the cocktail fills the glass.",
                 "Garnish with a bouquet of fresh mint, edible flowers, pineapple leaves and a tiki umbrella."
             ],
+            icon: "texas-tiki.svg",
             image: "texas-tiki.jpg"
         }
     },
@@ -464,6 +485,7 @@ var recipes = {
                 "Add ice into a shaker and then pout in matcha mixture.",
                 "Shake and serve in a highball."
             ],
+            icon: "matcha.svg",
             image: "matcha.jpg"
         },
         medium: {
@@ -485,6 +507,7 @@ var recipes = {
                 "Holding your thumb over the opening of the bottle of beer, quickly overturn the bottle into the glass, removing your thumb just before submerging it into the glass.",
                 "Drink with a straw, ideally with a friend."
             ],
+            icon: "mexican-bulldog.svg",
             image: "mexican-bulldog.jpg"
         },
         hard: {
@@ -505,6 +528,7 @@ var recipes = {
                 "Pare an orange peel and express the oils from the back of the peel over the old fashioned.",
                 "Rub the peel around the rim of the glass and drop the peel into the glass.",
             ],
+            icon: "old-fashion.svg",
             image: "old-fashion.jpg"
         }
     }
