@@ -591,6 +591,24 @@ function ChangeDrinkRecipe(){
     CreateIngredients();
 }
 
+/*function DrinkSlideshow(){
+    drinkSlideshow = document.querySelector("#slideshow-imgs");
+    imgNum = 1;
+    
+    drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow +".jpg"; 
+    
+    for(i = 0; i < currentRecipe.slideshow.length; i++){
+         = currentRecipe.slideshow[i];
+    }
+}
+
+setInterval(DrinkSlideshow(){
+      imgNum = imgNum + 1;
+      if(imgNum > 3){
+        imgNum = 1;
+      }
+      mainImg.src = "img/img"+imgNum+".jpg";
+    }, 1000);*/
 
 //====================================
 //             Default UI
