@@ -20,7 +20,8 @@ var recipes = {
                 "Top with soda water and give a quick stir."
             ],
             icon: "peach-mojito.svg",
-            image: "peach-mojito.jpg"
+            image: "peach-mojito.jpg",
+            slideshow: ["peach-mojito-1.jpg", "peach-mojito-2.jpg", "peach-mojito-3.jpg"]
         },
         medium: {
             name: "Yakult <span class='skyblue'>Soju</span>",
@@ -39,7 +40,8 @@ var recipes = {
                 "Mix evenly with stirrer before serving."
             ],
             icon: "yakult-soju.svg",
-            image: "yakult-soju.jpg"
+            image: "yakult-soju.jpg",
+            slideshow: ["yakult-soju-1.jpg", "yakult-soju-2.jpg", "yakult-soju-3.jpg"]
         },
         hard: {
             name: "Long Island <br><span class='skyblue'>Iced Tea</span>",
@@ -64,7 +66,8 @@ var recipes = {
                 "Garnish with a lemon slice."
             ],
             icon: "long-island-icedtea.svg",
-            image: "long-island-icedtea.jpg"
+            image: "long-island-icedtea.jpg",
+            slideshow: ["long-island-icedtea-1.jpg", "long-island-icedtea-2.jpg", "long-island-icedtea-3.jpg"]
         },
     },
     // ==============================================
@@ -87,7 +90,8 @@ var recipes = {
                 "Garnish with a slice of orange."
             ],
             icon: "aperol-spritz.svg",
-            image: "aperol-spritz.jpg"
+            image: "aperol-spritz.jpg",
+            slideshow: ["aperol-spritz-1.jpg", "aperol-spritz-2.jpg", "aperol-spritz-3.jpg"]
         },
         medium: {
             name: "Drunken <span class='skyblue'>Elephant</span>",
@@ -113,7 +117,8 @@ var recipes = {
                 "Garnish with grated cinnamon and mint."
             ],
             icon: "drunken-elephant.svg",
-            image: "drunken-elephant.jpg"
+            image: "drunken-elephant.jpg",
+            slideshow: ["drunken-elephant-1.jpg", "drunken-elephant-2.jpg", "drunken-elephant-3.jpg"]
         },
         hard: {
             name: "Whiskey <span class='skyblue'>Smash</span>",
@@ -134,7 +139,8 @@ var recipes = {
                 "Garnish with a mint sprig."
             ],
             icon: "whiskey-smash.svg",
-            image: "whiskey-smash.jpg"
+            image: "whiskey-smash.jpg",
+            slideshow: ["whiskey-smash-1.jpg", "whiskey-smash-2.jpg", "whiskey-smash-3.jpg"]
         }
     },
     // ==============================================
@@ -158,7 +164,8 @@ var recipes = {
                 "Garnish with whipped cream and chocolate shavings."
             ],
             icon: "irish-affogato.svg",
-            image: "irish-affogato.jpg"
+            image: "irish-affogato.jpg",
+            slideshow: ["irish-affogato-1.jpg", "irish-affogato-2.jpg", "irish-affogato-3.jpg"]
         },
         medium: {
             name: "Milk <span class='skyblue'>Punch</span>",
@@ -177,7 +184,8 @@ var recipes = {
                 "Garnish with grated nutmeg."
             ],
             icon: "milk-punch.svg",
-            image: "milk-punch.jpg"
+            image: "milk-punch.jpg",
+            slideshow: ["milk-punch-1.jpg", "milk-punch-2.jpg", "milk-punch-3.jpg"]
         },
         hard: {
             name: "White <span class='skyblue'>Russian</span>",
@@ -195,8 +203,9 @@ var recipes = {
                 "Serve with a straw and stir it up.",
                 "Enjoy!"
             ],
-            icon: "white-russian.svg",
-            image: "white-russian.jpg"
+            icon: "milk-punch.svg",
+            image: "white-russian.jpg",
+            slideshow: ["milk-punch-1.jpg", "milk-punch-2.jpg", "milk-punch-3.jpg"]
         }
     },
     // ==============================================
@@ -218,7 +227,8 @@ var recipes = {
                 "Garnish with a lime wedge, and enjoy!",
             ],
             icon: "moscow-mule.svg",
-            image: "moscow-mule.jpg"
+            image: "moscow-mule.jpg",
+            slideshow: ["moscow-mule-1.jpg", "moscow-mule-2.jpg", "moscow-mule-3.jpg"]
         },
         medium: {
             name: "Frozen Watermelon <span class='skyblue'>Margarita</span>",
@@ -239,7 +249,8 @@ var recipes = {
                 "Enjoy!",
             ],
             icon: "watermelon-margarita.svg",
-            image: "watermelon-margarita.jpg"
+            image: "watermelon-margarita.jpg",
+            slideshow: ["watermelon-margarita-1.jpg", "watermelon-margarita-2.jpg", "watermelon-margarita-3.jpg"]
         },
         hard: {
             name: "Mezcal <span class='skyblue'>Negroni</span>",
@@ -259,7 +270,8 @@ var recipes = {
                 "Garnish with an orange twist."
             ],
             icon: "mezcal-negroni.svg",
-            image: "mezcal-negroni.jpg"
+            image: "mezcal-negroni.jpg",
+            slideshow: ["mezcal-negroni-1.jpg", "mezcal-negroni-2.jpg", "mezcal-negroni-3.jpg"]
         }
     },
     // ==============================================
@@ -285,7 +297,8 @@ var recipes = {
                 "Serve over ice."
             ],
             icon: "raspberry-beer-margarita.svg",
-            image: "raspberry-beer-margarita.jpg"
+            image: "raspberry-beer-margarita.jpg",
+            slideshow: ["raspberry-beer-margarita-1.jpg", "raspberry-beer-margarita-2.jpg", "raspberry-beer-margarita-3.jpg"]
         },
         medium: {
             name: "Classic <span class='skyblue'>Martini</span>",
@@ -307,7 +320,8 @@ var recipes = {
                 "Serve and enjoy!"
             ],
             icon: "classic-martini.svg",
-            image: "classic-martini.jpg"
+            image: "classic-martini.jpg",
+            slideshow: ["classic-martini-1.jpg", "classic-martini-2.jpg", "classic-martini-3.jpg"]
         },
         hard: {
             name: "Four <span class='skyblue'>Horsemen</span>",
@@ -324,7 +338,8 @@ var recipes = {
                 "Cheers!"
             ],
             icon: "four-horsemen.svg",
-            image: "four-horsemen.jpg"
+            image: "four-horsemen.jpg",
+            slideshow: ["four-horsemen-1.jpg", "four-horsemen-2.jpg", "four-horsemen-3.jpg"]
         }
     },
     // ===============================
@@ -350,7 +365,8 @@ var recipes = {
                 "Divide bottles chilled prosecco among glasses."
             ],
             icon: "sparkling-grapefruit-sangria.svg",
-            image: "sparkling-grapefruit-sangria.jpg"
+            image: "sparkling-grapefruit-sangria.jpg",
+            slideshow: ["sparkling-grapefruit-sangria-1.jpg", "sparkling-grapefruit-sangria-2.jpg", "sparkling-grapefruit-sangria-3.jpg"]
         },
         medium: {
             name: "Chocolate <br><span class='skyblue'>Cake Shot</span>",
@@ -370,7 +386,8 @@ var recipes = {
                 "Strain into the sugar-rimmed shot glass and serve with a lemon wedge, if desired."
             ],
             icon: "chocolate-cake-shot.svg",
-            image: "chocolate-cake-shot.jpg"
+            image: "chocolate-cake-shot.jpg",
+            slideshow: ["chocolate-cake-shot-1.jpg", "chocolate-cake-shot-2.jpg", "chocolate-cake-shot-3.jpg"]
         },
         hard: {
             name: "Fish House <span class='skyblue'>Punch</span>",
@@ -392,7 +409,8 @@ var recipes = {
                 "Garnish with lemon wheels and serve with a ladle."
             ],
             icon: "fish-house-punch.svg",
-            image: "fish-house-punch.jpg"
+            image: "fish-house-punch.jpg",
+            slideshow: ["fish-house-punch-1.jpg", "fish-house-punch-2.jpg", "fish-house-punch-3.jpg"]
         }
     },
     // ===============================
@@ -413,7 +431,8 @@ var recipes = {
                 "Pour into wine glasses and garnish with strawberries."
             ],
             icon: "frose.svg",
-            image: "frose.jpg"
+            image: "frose.jpg",
+            slideshow: ["frose-1.jpg", "frose-2.jpg", "frose-3.jpg"]
         },
         medium: {
             name: "Tia <span class='skyblue'>Mia</span>",
@@ -437,7 +456,8 @@ var recipes = {
                 "Garnish with the mint sprig, lime wheel and orchid."
             ],
             icon: "tia-mia.svg",
-            image: "tia-mia.jpg"
+            image: "tia-mia.jpg",
+            slideshow: ["tia-mia-1.jpg", "tia-mia-2.jpg", "tia-mia-3.jpg"]
         },
         hard: {
             name: "Texas <span class='skyblue'>Tiki</span>",
@@ -464,7 +484,8 @@ var recipes = {
                 "Garnish with a bouquet of fresh mint, edible flowers, pineapple leaves and a tiki umbrella."
             ],
             icon: "texas-tiki.svg",
-            image: "texas-tiki.jpg"
+            image: "texas-tiki.jpg",
+            slideshow: ["texas-tiki-1.jpg", "texas-tiki-2.jpg", "texas-tiki-3.jpg"]
         }
     },
     // ===============================
@@ -486,7 +507,8 @@ var recipes = {
                 "Shake and serve in a highball."
             ],
             icon: "matcha.svg",
-            image: "matcha.jpg"
+            image: "matcha.jpg",
+            slideshow: ["matcha-1.jpg", "matcha-2.jpg", "matcha-3.jpg"]
         },
         medium: {
             name: "Mexican <span class='skyblue'>Bulldog</span>",
@@ -508,7 +530,8 @@ var recipes = {
                 "Drink with a straw, ideally with a friend."
             ],
             icon: "mexican-bulldog.svg",
-            image: "mexican-bulldog.jpg"
+            image: "mexican-bulldog.jpg",
+            slideshow: ["mexican-bulldog-1.jpg", "mexican-bulldog-2.jpg", "mexican-bulldog-3.jpg"]
         },
         hard: {
             name: "Old <span class='skyblue'>Fashion</span>",
@@ -529,7 +552,8 @@ var recipes = {
                 "Rub the peel around the rim of the glass and drop the peel into the glass.",
             ],
             icon: "old-fashion.svg",
-            image: "old-fashion.jpg"
+            image: "old-fashion.jpg",
+            slideshow: ["old-fashion-1.jpg", "old-fashion-2.jpg", "old-fashion-3.jpg"]
         }
     }
 }

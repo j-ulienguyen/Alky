@@ -50,8 +50,6 @@
     <!-- Start Page (1) -->
     <div id="start-page" class="partial-wrapper">
         <section id="name-section">
-            <br>
-            <br>
             <p class="body-text white">Hi, what's <span class="skyblue">your name?</span></p>
             <input type="text" name="name" id="name-input" placeholder="Enter Your Name" onkeyup="StoreName()">
         </section>
@@ -67,13 +65,12 @@
         <h1 class="main-heading">How many people are <span class="skyblue">drinking?</span></h1>
 
         <section id="players-section">
-            <img id="single-icon" class="icons-big" src="img/single-player_icon.svg" alt="Single Player" onclick="ActiveIcon(this)">
-            <img id="multiplayer-icon" class="icons-big" src="img/multiplayer_icon.svg" alt="Multiplayer" onclick="ActiveIcon(this)">
+            <img id="single-icon" class="icons-big" src="img/single-player_icon.svg" alt="Single Player" onclick="ActiveIcon(this); ChangePage('playersPage')">
+            <img id="multiplayer-icon" class="icons-big" src="img/multiplayer_icon.svg" alt="Multiplayer" onclick="ActiveIcon(this); ChangePage('playersPage')">
         </section>
-        <br><br>
 
         <section class="btn-section">
-            <button class="btn btn-text" onclick="ChangePage('playersPage')">Continue</button>
+            <!-- <button class="btn btn-text" onclick="ChangePage('playersPage')">Continue</button> -->
             <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('playersPage')">Go Back</button>
         </section>
     </div>
@@ -84,15 +81,15 @@
 
         <section id="mood-section">
             <div class="icon-container">
-                <img id="happy-icon" class="icons" src="img/happy_icon.svg" alt="Happy" onclick="ActiveIcon(this)">
-                <img id="heartbroken-icon" class="icons" src="img/heartbroken_icon.svg" alt="Heartbroken" onclick="ActiveIcon(this)">
-                <img id="fatigue-icon" class="icons" src="img/fatigue_icon.svg" alt="Fatigue" onclick="ActiveIcon(this)">
-                <img id="stressed-icon" class="icons" src="img/stressed_icon.svg" alt="Stressed" onclick="ActiveIcon(this)">
+                <img id="happy-icon" class="icons" src="img/happy_icon.svg" alt="Happy" onclick="ActiveIcon(this);ChangePage('moodPage')">
+                <img id="heartbroken-icon" class="icons" src="img/heartbroken_icon.svg" alt="Heartbroken" onclick="ActiveIcon(this);ChangePage('moodPage')">
+                <img id="fatigue-icon" class="icons" src="img/fatigue_icon.svg" alt="Fatigue" onclick="ActiveIcon(this);ChangePage('moodPage')">
+                <img id="stressed-icon" class="icons" src="img/stressed_icon.svg" alt="Stressed" onclick="ActiveIcon(this);ChangePage('moodPage')">
             </div>
         </section>
 
         <section class="btn-section">
-            <button class="btn btn-text" onclick="ChangePage('moodPage')">Continue</button>
+            <!-- <button class="btn btn-text" onclick="ChangePage('moodPage')">Continue</button> -->
             <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('moodPage')">Go Back</button>
         </section>
     </div>
@@ -103,15 +100,15 @@
 
         <section id="event-section">
             <div class="icon-container">
-                <img id="goingout-icon" class="icons" src="img/going-out_icon.svg" alt="Going Out" onclick="ActiveIcon(this)">
-                <img id="birthday-icon" class="icons" src="img/birthday_icon.svg" alt="Birthday" onclick="ActiveIcon(this)">
-                <img id="relaxing-icon" class="icons" src="img/relaxing_icon.svg" alt="Relaxing" onclick="ActiveIcon(this)">
-                <img id="gamenight-icon" class="icons" src="img/game-night_icon.svg" alt="Game Night" onclick="ActiveIcon(this)">
+                <img id="goingout-icon" class="icons" src="img/going-out_icon.svg" alt="Going Out" onclick="ActiveIcon(this);ChangePage('eventsPage')">
+                <img id="birthday-icon" class="icons" src="img/birthday_icon.svg" alt="Birthday" onclick="ActiveIcon(this);ChangePage('eventsPage')">
+                <img id="relaxing-icon" class="icons" src="img/relaxing_icon.svg" alt="Relaxing" onclick="ActiveIcon(this);ChangePage('eventsPage')">
+                <img id="gamenight-icon" class="icons" src="img/game-night_icon.svg" alt="Game Night" onclick="ActiveIcon(this);ChangePage('eventsPage')">
             </div>
         </section>
 
         <section class="btn-section">
-            <button class="btn btn-text" onclick="ChangePage('eventsPage')">Continue</button>
+            <!-- <button class="btn btn-text" onclick="ChangePage('eventsPage')">Continue</button> -->
             <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('eventsPage')">Go Back</button>
         </section>
     </div>
@@ -121,14 +118,13 @@
         <h1 class="main-heading">Strength of<span class="skyblue"> Drink?</span></h1>
 
         <section id="strength-section">
-            <img class="strength-icon" id="light-icon" src="img/light_icon.svg" alt="Light Strength" onclick="ActiveIcon(this)">
-            <img class="strength-icon" id="medium-icon" src="img/medium_icon.svg" alt="Medium Strength" onclick="ActiveIcon(this)">
-            <img class="strength-icon" id="hard-icon" src="img/hard_icon.svg" alt="Hard Strength" onclick="ActiveIcon(this)">
+            <img class="strength-icon" id="light-icon" src="img/light_icon.svg" alt="Light Strength" onclick="ActiveIcon(this);ChangePage('strengthPage')">
+            <img class="strength-icon" id="medium-icon" src="img/medium_icon.svg" alt="Medium Strength" onclick="ActiveIcon(this);ChangePage('strengthPage')">
+            <img class="strength-icon" id="hard-icon" src="img/hard_icon.svg" alt="Hard Strength" onclick="ActiveIcon(this);ChangePage('strengthPage')">
         </section>
-        <br>
 
         <section class="btn-section">
-            <button class="btn btn-text" onclick="ChangePage('strengthPage')">Continue</button>
+            <!-- <button class="btn btn-text" onclick="ChangePage('strengthPage')">Continue</button> -->
             <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('strengthPage')">Go Back</button>
         </section>
     </div>
@@ -182,9 +178,9 @@
                 <ol class="body-text" id="instructions-list"></ol>
             </section>
 
-            <!-- <section id="animation-icon" class="section-bottom">
-                <img src="img/martini_icon.svg" alt="martini glass">
-            </section> -->
+            <section class="btn-section">
+                <button class="btn btn-text" onclick="ChangePageBack('recipePage')">Try Again</button>
+            </section>
         </div>
         <!-- Back To Top Icon -->
         <a href="#logo-container"><img id="arrow-up" src="img/arrow-up.svg" alt="Back To Top Icon"></a>
