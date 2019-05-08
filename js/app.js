@@ -469,7 +469,7 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "flex";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 105 + "vh";
+        bubblesBG.style.height = 100 + "vh";
     }
 
     else if(currentPage == "recipePage"){
@@ -573,10 +573,10 @@ function ChangeDrinkRecipe(){
     // console.log(drinkName); // Determine class nodes
     drinkName[0].innerHTML = currentRecipe.name; // Drink Name on Recommend Page
     drinkName[1].innerHTML = currentRecipe.name; // Drink Name on Recipe Page
-    drinkIcon.src = "img/"+ currentRecipe.icon;
+    drinkIcon.src = "img/" + currentRecipe.icon;
     drinkCTA.innerHTML = currentRecipe.cta;
     drinkIntro.innerHTML = currentRecipe.intro;
-    drinkHeader.style.backgroundImage = "url(../img/hero/"+currentRecipe.image+")";
+    drinkHeader.style.backgroundImage = "url(img/hero/" + currentRecipe.image + ")";
     CreateInstructions();
     CreateIngredients();
 }
@@ -584,9 +584,9 @@ function ChangeDrinkRecipe(){
 /*function DrinkSlideshow(){
     drinkSlideshow = document.querySelector("#slideshow-imgs");
     imgNum = 1;
-    
-    drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow +".jpg"; 
-    
+
+    drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow[i] +".jpg";
+
     for(i = 0; i < currentRecipe.slideshow.length; i++){
          = currentRecipe.slideshow[i];
     }
@@ -599,6 +599,12 @@ setInterval(DrinkSlideshow(){
       }
       mainImg.src = "img/img"+imgNum+".jpg";
     }, 1000);*/
+
+
+
+    // slideshow: ["mexican-bulldog-1.jpg", "mexican-bulldog-2.jpg", "mexican-bulldog-3.jpg"]
+    // slideshow[0] / [1] / [2]
+    // currentRecipe.slideshow[i];
 
 //====================================
 //             Default UI

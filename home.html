@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alky | Home</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body id="top-page">
+    <!-- START NAVIGATION -->
+    <!-- Hamburger Menu Icon -->
+    <nav id="hamburger-icon" onclick="MenuToggle(this)">
+        <div id="line1" class="menu-line"></div>
+        <div id="line2" class="menu-line"></div>
+        <div id="line3" class="menu-line"></div>
+    </nav>
+
+    <!-- Fullscreen Menu -->
+    <div id="menu-nav">
+        <a href="home.html" class="nav-item">Home</a>
+        <a href="#about-section" class="nav-item">About Alky</a>
+        <a href="#tutorial-section" class="nav-item">How To</a>
+    </div>
+    <!-- ====== END NAVIGATION ======= -->
+
+    <!-- Background Bubbles -->
+    <div id="bubbles-container">
+        <ul class="bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+    <!-- Intro Section -->
+    <div id="intro-section" class="partial-wrapper">
+        <!-- Alky Logo -->
+        <header id="logo-container">
+            <a href="home.html"><img id="logo" src="img/alky-white.svg" alt="Alky Logo"></a>
+        </header>
+
+        <h3 class="main-heading white">Let's Find <span class="skyblue">YOU</span> A Drink!</h3>
+        <p class="body-text">Are you feeling some type of way or unsure of what to drink at your next outing with friends? Alky is the perfect companion to help you decide!</p>
+
+        <section class="btn-section">
+            <a href="index.html"><button class="btn btn-text">Let's Start</button></a>
+            <a href="#tutorial-section"><button class="btn btn-text">How To</button></a>
+        </section>
+    </div>
+
+    <!-- About Section -->
+    <div id="about-section">
+        <section class="partial-wrapper">
+            <img id="alky-icon" src="img/alky-icon.svg" alt="Alky Icon">
+            <h3 class="darkgrey main-heading uppercase">About <span class="skyblue">Alky</span></h3>
+            <p class="body-text-dark">Alky is a user-friendly application geared towards those above the legal drinking age and who are always seeking new ways to have fun.</p>
+            <p class="subheading"><em><span class="skyblue">Alky</span> believes that everyone can find their perfect drink!</em></p>
+        </section>
+    </div>
+    
+    <!-- Tutorial Section -->
+    <div id="tutorial-section">
+        <section class="partial-wrapper">
+            <h3 class="darkgrey main-heading uppercase">How To Use <span class="skyblue">Alky</span></h3>
+            <div class="tutorial-image">
+                <img src="img/slideshow/classic-martini-1.jpg" alt="Alky Tutorial">
+            </div>
+            <p class="body-text">Alky is a user-friendly application geared towards those above the legal drinking age and who are always seeking new ways to have fun.</p>
+        </section>
+    </div>
+
+    <!-- Back To Top - Button -->
+    <a href="#top-page"><img id="arrow-up" src="img/arrow-up.svg" alt="Back To Top Icon"></a>
+
+    <!-- Link to External JS -->
+    <script src="js/recipes.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
