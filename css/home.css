@@ -163,7 +163,6 @@ a.nav-item:hover {
     color: #fff;
 }
 
-
 /*==========================================
               Hamburger Menu
 ==========================================*/
@@ -262,6 +261,20 @@ a.nav-item:hover {
     transition: color 0.3s;
 }
 
+.btn-section {
+    text-align: center;
+    margin: 2.5rem 0;
+    /* margin-bottom: 2.5rem; */
+}
+
+#arrow-up {
+    /* Back To Top - Button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    width: 2.5em;
+}
 
 /*==========================================
                 Background
@@ -411,12 +424,10 @@ body {
 .partial-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
     width: 85%;
-    height: 68vh;
-
+    /* height: 68vh; */
     margin: 0 auto;
 }
 
@@ -427,244 +438,122 @@ body {
     align-content: space-between;
 
     width: 100%;
-    height: 68vh;
-
+    /* height: 68vh; */
     margin: 0 auto;
 }
-
 
 /*==========================================
                Header - Logo
 ==========================================*/
 #logo-container {
     width: 100%;
-
     text-align: center;
-    margin: 0 auto;
-    padding: 9vh 0;
+    margin-bottom: 4rem;
 }
 
 #logo {
     width: 15rem;
 }
 
+/*==========================================
+                Intro Section
+==========================================*/
+#intro-section {
+    justify-content: center;
+    height: 100vh;
+    /* padding: 35vh 0; */
+}
+
+#intro-section .body-text {
+    text-align: center;
+}
 
 /*==========================================
-               Start Page (1)
+                About Section
 ==========================================*/
-#name-section {
+#about-section {
+    background: white;
+}
+
+#about-section .partial-wrapper {
+    justify-content: center;
+    height: 100vh;
+}
+
+#about-section .main-heading {
+    color: var(--darkgrey);
+}
+
+#about-section .subheading {
     text-align: center;
-    font-size: 1.25em;
-    margin-top: 5rem;
+    margin: 1.5rem 0;
 }
 
-#name-input {
-    width: 18rem;
-    height: 2.5rem;
-
-    border-radius: 10rem;
-    border: 0;
-
-    text-align: center;
-    margin-top: 0.75rem;
-}
-
-.btn-section {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-
-/*==========================================
-              Players Page (2)
-==========================================*/
-#players-section {
-    text-align: center;
-    margin-bottom: 1.85rem;
-}
-
-.icons-big {
-    width: 90%;
-}
-
-.icons-big:hover {
-    position: relative;
-    bottom: 5px;
-}
-
-
-/*=========================================
-      Mood Page (3a) // Events Page (3b)
-==========================================*/
-.icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-
-    margin-bottom: 1.35rem;
-}
-
-.icons {
-    width: 40%;
-    margin-bottom: 1rem;
-}
-
-.icons:hover {
-    position: relative;
-    bottom: 5px;
-}
-
-
-/*=========================================
-              Strength Page (4)
-==========================================*/
-#strength-section {
-    text-align: center;
-}
-
-.strength-icon {
-    width: 95%;
-    margin-bottom: 0.85rem;
-}
-
-.strength-icon:last-child {
-    margin-bottom: 1.35rem;
-}
-
-.strength-icon:hover {
-    position: relative;
-    bottom: 5px;
-}
-
-
-/*==========================================
-        Drink Recommendation Page (5)
-==========================================*/
-.drink-info {
-    text-align: center;
-    max-width: 90%;
+#alky-icon {
+    width: 35%;
     margin: 0 auto;
+    margin-bottom: 3rem;
 }
-
-#drink-section {
-    margin-bottom: 2.5rem;
-}
-
 
 /*==========================================
-           Drink Recipe Page (6)
+              Tutorial Section
 ==========================================*/
-#drink-header {
-    width: 100%;
-    height: 25rem;
-
-    background-position: center;
-    background-size: cover;
-    background-image: url(img/classic-martini.jpg);
+#tutorial-section {
+    /* padding: 6rem 0; */
+    text-align: center;
 }
 
-#recommend-name {
-    width: 85%;
-    margin: 2rem auto;
+#tutorial-section .partial-wrapper{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#recipe-intro {
+.tutorial-image-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    width: 85%;
-    margin: 0 auto;
+    position: relative;
+    width: 15rem;
+    max-height: 50vh;
+    /* overflow: hidden; */
+    /* margin-bottom: 2rem; */
+    /* border: 1px solid red; */
 }
 
-#drink-intro {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-#ingredients-section {
-    color: var(--darkgrey);
-    background-color: #fff;
-    padding: 2rem 0;
-}
-
-#ingredients-width {
-    width: 65%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-#ingredients-list li {
-    list-style: none;
-    text-align: left;
-    margin-bottom: 0.25rem;
-}
-
-#ingredients-list li:before {
-    color: var(--skyblue);
-    content: "\2022"; /* Bullet unicode */
-    margin-left: -1.25rem;
-    margin-right: 1rem;
-}
-
-#slideshow-section, #slideshow-imgs {
+#tutorial-image {
     width: 100%;
-    height: 20rem;
-    background-color: aliceblue;
 }
 
-#instructions-section {
-    color: var(--darkgrey);
-    width: 75%;
+#next-btn, #prev-btn {
+    width: 3em;
+    height: 3em;
 
-    margin: 0 auto;
-    padding: 2rem 0;
+    position: relative;
+    bottom: 10rem;
+
+    border: none;
+    border-radius: 50%;
+
+    color: white;
+    background: none;
+
+    /* padding: 0.35rem 1rem; */
+    margin: 0 1rem;
 }
 
-#instructions-list li::before {
-    width: 1em;
-    content: counter(li);
-    color: var(--skyblue);
-    font-weight: bold;
-
-    margin-left: -1.25rem;
-    margin-right: 0.5rem;
+#next-btn:hover, #prev-btn:hover {
+    /* border: 2px solid var(--violet); */
+    /* background: none; */
+    background: white;
 }
 
-
-#instructions-list li {
-    list-style: none;
-    counter-increment: li;
-    margin-bottom: 0.75rem;
+#next-btn {
+    left: 8em;
 }
 
-#arrow-up {
-    /* Back To Top - Button */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    width: 2.5em;
-}
-
-/*==========================================
-           Starting Point / For JS
-==========================================*/
-/* Display will be defined in JS */
-/* Start with nothing */
-#start-page,
-#players-page,
-#mood-page,
-#events-page,
-#strength-page,
-#recommend-page,
-#recipe-page {
-    display: none;
-}
-
-/* When a button is selected - White glow will appear */
-.active-icon {
-    border-radius: 0.8em;
-    box-shadow: 0 0 8px white;
-    transition: box-shadow 0.3s;
+#prev-btn {
+    right: 8em;
 }

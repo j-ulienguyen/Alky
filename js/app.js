@@ -388,21 +388,21 @@ function ChangeLogo(){
 }
 
 function ChangePageUI(currentPage){
-    if(currentPage == "startPage"){
-        ChangeLogo();
+    // if(currentPage == "startPage"){
+    //     ChangeLogo();
 
-        startPage.style.display = "flex";
-        playersPage.style.display = "none";
-        moodPage.style.display = "none";
-        eventsPage.style.display = "none";
-        strengthPage.style.display = "none";
-        recommendPage.style.display = "none";
-        recipePage.style.display = "none";
+    //     startPage.style.display = "flex";
+    //     playersPage.style.display = "none";
+    //     moodPage.style.display = "none";
+    //     eventsPage.style.display = "none";
+    //     strengthPage.style.display = "none";
+    //     recommendPage.style.display = "none";
+    //     recipePage.style.display = "none";
 
-        bubblesBG.style.height = 100 + "vh";
-    }
+    //     bubblesBG.style.height = 100 + "vh";
+    // }
 
-    else if(currentPage == "playersPage"){
+    if(currentPage == "playersPage"){
         ChangeLogo();
 
         startPage.style.display = "none";
@@ -469,7 +469,7 @@ function ChangePageUI(currentPage){
         recommendPage.style.display = "flex";
         recipePage.style.display = "none";
 
-        bubblesBG.style.height = 105 + "vh";
+        bubblesBG.style.height = 100 + "vh";
     }
 
     else if(currentPage == "recipePage"){
@@ -573,15 +573,28 @@ function ChangeDrinkRecipe(){
     // console.log(drinkName); // Determine class nodes
     drinkName[0].innerHTML = currentRecipe.name; // Drink Name on Recommend Page
     drinkName[1].innerHTML = currentRecipe.name; // Drink Name on Recipe Page
-    drinkIcon.src = "img/"+ currentRecipe.icon;
+    drinkIcon.src = "img/" + currentRecipe.icon;
     drinkCTA.innerHTML = currentRecipe.cta;
     drinkIntro.innerHTML = currentRecipe.intro;
-    drinkHeader.style.backgroundImage = "url(../img/hero/"+currentRecipe.image+")";
+    drinkHeader.style.backgroundImage = "url(img/hero/" + currentRecipe.image + ")";
     CreateInstructions();
     CreateIngredients();
     DrinkSlideshow();
 }
 
+<<<<<<< HEAD
+=======
+/*function DrinkSlideshow(){
+    drinkSlideshow = document.querySelector("#slideshow-imgs");
+    imgNum = 1;
+
+    drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow[i] +".jpg";
+
+    for(i = 0; i < currentRecipe.slideshow.length; i++){
+         = currentRecipe.slideshow[i];
+    }
+}
+>>>>>>> cb78faeb643087edc15b3a5f34efd879713dd5f0
 
 function DrinkSlideshow(){
     drinkSlideshow = document.querySelector("#slideshow-imgs");
@@ -595,7 +608,68 @@ function DrinkSlideshow(){
     }, 1000);
 }
 
+
+
+    // slideshow: ["mexican-bulldog-1.jpg", "mexican-bulldog-2.jpg", "mexican-bulldog-3.jpg"]
+    // slideshow[0] / [1] / [2]
+    // currentRecipe.slideshow[i];
+
+
+imgNum = 0;
+tutNum = 0;
+
+function TutorialSlideshow(btn){
+    tutImage = document.querySelector("#tutorial-image"),
+    tutHeading = document.querySelector("#tutorial-heading"),
+    tutDesc = document.querySelector("#tutorial-desc");
+
+        headings = [
+            "Who's Drinking?",
+            "Mood or Event?",
+            "Alcohol Strength",
+            "Here's Your Drink!"
+        ];
+
+        steps = [
+            "Select the number of players drinking tonight.<br>Will it be a party of one or several?",
+            "Depending on the number of players selected, you will be asked either how you're feeling or what's the occasion for tonight.",
+            "Select the strength level of your drink. Will it be a light, medium or hard drink? We will quickly generate your results thereafter.",
+            "Based on your selections, Alky will provide you with a personalized drink recommendation. Cheers!"
+        ];
+
+
+    if(btn.id == "next-btn"){
+        imgNum += 1;
+        tutNum += 1;
+        // console.log("+1");
+    }
+
+    if(btn.id == "prev-btn"){
+        imgNum -= 1;
+        tutNum -= 1;
+        // console.log("-1");
+    }
+
+    if(imgNum > 4){
+        imgNum = 4;
+        tutNum = 3;
+    }
+
+    else if(imgNum < 1){
+        imgNum = 1;
+        tutNum = 0;
+    }
+
+    tutImage.src = "img/tut/tutorial-" + imgNum + ".svg";
+    tutHeading.innerHTML = headings[tutNum];
+    tutDesc.innerHTML = steps[tutNum];
+}
+
+
+
 //====================================
 //             Default UI
 //====================================
 ChangePageUI('startPage');
+
+
