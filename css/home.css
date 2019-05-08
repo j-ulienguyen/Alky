@@ -500,24 +500,60 @@ body {
 ==========================================*/
 #tutorial-section {
     /* padding: 6rem 0; */
+    text-align: center;
 }
 
 #tutorial-section .partial-wrapper{
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
 
-.tutorial-image {
-    width: 80%;
-    max-height: 50%;
-    overflow: hidden;
+.tutorial-image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    margin-bottom: 2rem;
-    border: 1px solid red;
+    position: relative;
+    width: 15rem;
+    max-height: 50vh;
+    /* overflow: hidden; */
+    /* margin-bottom: 2rem; */
+    /* border: 1px solid red; */
 }
 
-.tutorial-image img {
+#tutorial-image {
     width: 100%;
+}
+
+#next-btn, #prev-btn {
+    width: 3em;
+    height: 3em;
+
+    position: relative;
+    bottom: 10rem;
+
+    border: none;
+    border-radius: 50%;
+
+    color: white;
+    background: none;
+
+    /* padding: 0.35rem 1rem; */
+    margin: 0 1rem;
+}
+
+#next-btn:hover, #prev-btn:hover {
+    /* border: 2px solid var(--violet); */
+    /* background: none; */
+    background: white;
+}
+
+#next-btn {
+    left: 8em;
+}
+
+#prev-btn {
+    right: 8em;
 }

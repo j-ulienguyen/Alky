@@ -67,15 +67,20 @@
             <p class="subheading"><em><span class="skyblue">Alky</span> believes that everyone can find their perfect drink!</em></p>
         </section>
     </div>
-    
+
     <!-- Tutorial Section -->
     <div id="tutorial-section">
         <section class="partial-wrapper">
             <h3 class="darkgrey main-heading uppercase">How To Use <span class="skyblue">Alky</span></h3>
-            <div class="tutorial-image">
-                <img src="img/slideshow/classic-martini-1.jpg" alt="Alky Tutorial">
+            <div class="tutorial-image-box">
+                <img id="tutorial-image" src="img/tut/tutorial-1.svg" alt="Alky Tutorial">
+                <div id="image-btns">
+                    <button id="prev-btn" onclick="TutorialSlideshow(this)"><img src="img/left-arrow.svg" alt="Previous Arrow Button"></button>
+                    <button id="next-btn" onclick="TutorialSlideshow(this)"><img src="img/right-arrow.svg" alt="Next Arrow Button"></button>
+                </div>
             </div>
-            <p class="body-text">Alky is a user-friendly application geared towards those above the legal drinking age and who are always seeking new ways to have fun.</p>
+            <h3 class="subheading white" id="tutorial-heading">Who's Drinking?</h3>
+            <p class="body-text" id="tutorial-desc">Select the number of players drinking tonight.<br>Will it be a party of one or several?</p>
         </section>
     </div>
 
