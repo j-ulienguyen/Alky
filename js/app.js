@@ -579,26 +579,21 @@ function ChangeDrinkRecipe(){
     drinkHeader.style.backgroundImage = "url(../img/hero/"+currentRecipe.image+")";
     CreateInstructions();
     CreateIngredients();
+    DrinkSlideshow();
 }
 
-/*function DrinkSlideshow(){
+
+function DrinkSlideshow(){
     drinkSlideshow = document.querySelector("#slideshow-imgs");
-    imgNum = 1;
-    
-    drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow +".jpg"; 
-    
-    for(i = 0; i < currentRecipe.slideshow.length; i++){
-         = currentRecipe.slideshow[i];
-    }
-}
-
-setInterval(DrinkSlideshow(){
-      imgNum = imgNum + 1;
-      if(imgNum > 3){
-        imgNum = 1;
+    var i = 0;
+    setInterval(function(){
+      i = i + 1;
+      if(i > 2){
+        i = 0;
       }
-      mainImg.src = "img/img"+imgNum+".jpg";
-    }, 1000);*/
+        drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow[i]; 
+    }, 1000);
+}
 
 //====================================
 //             Default UI
