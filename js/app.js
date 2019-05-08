@@ -388,19 +388,19 @@ function ChangeLogo(){
 }
 
 function ChangePageUI(currentPage){
-    // if(currentPage == "startPage"){
-    //     ChangeLogo();
+    if(currentPage == "startPage"){
+        ChangeLogo();
 
-    //     startPage.style.display = "flex";
-    //     playersPage.style.display = "none";
-    //     moodPage.style.display = "none";
-    //     eventsPage.style.display = "none";
-    //     strengthPage.style.display = "none";
-    //     recommendPage.style.display = "none";
-    //     recipePage.style.display = "none";
+        startPage.style.display = "flex";
+        playersPage.style.display = "none";
+        moodPage.style.display = "none";
+        eventsPage.style.display = "none";
+        strengthPage.style.display = "none";
+        recommendPage.style.display = "none";
+        recipePage.style.display = "none";
 
-    //     bubblesBG.style.height = 100 + "vh";
-    // }
+        bubblesBG.style.height = 100 + "vh";
+    }
 
     if(currentPage == "playersPage"){
         ChangeLogo();
@@ -582,37 +582,19 @@ function ChangeDrinkRecipe(){
     DrinkSlideshow();
 }
 
-<<<<<<< HEAD
-=======
-/*function DrinkSlideshow(){
-    drinkSlideshow = document.querySelector("#slideshow-imgs");
-    imgNum = 1;
-
-    drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow[i] +".jpg";
-
-    for(i = 0; i < currentRecipe.slideshow.length; i++){
-         = currentRecipe.slideshow[i];
-    }
-}
->>>>>>> cb78faeb643087edc15b3a5f34efd879713dd5f0
-
 function DrinkSlideshow(){
     drinkSlideshow = document.querySelector("#slideshow-imgs");
     var i = 0;
+
     setInterval(function(){
-      i = i + 1;
-      if(i > 2){
-        i = 0;
+        i = i + 1;
+
+        if(i > 2){
+            i = 0;
       }
-        drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow[i]; 
+        drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow[i];
     }, 1000);
 }
-
-
-
-    // slideshow: ["mexican-bulldog-1.jpg", "mexican-bulldog-2.jpg", "mexican-bulldog-3.jpg"]
-    // slideshow[0] / [1] / [2]
-    // currentRecipe.slideshow[i];
 
 
 imgNum = 0;
@@ -664,12 +646,3 @@ function TutorialSlideshow(btn){
     tutHeading.innerHTML = headings[tutNum];
     tutDesc.innerHTML = steps[tutNum];
 }
-
-
-
-//====================================
-//             Default UI
-//====================================
-ChangePageUI('startPage');
-
-

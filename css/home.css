@@ -478,6 +478,7 @@ body {
 #about-section .partial-wrapper {
     justify-content: center;
     height: 100vh;
+    text-align: center;
 }
 
 #about-section .main-heading {

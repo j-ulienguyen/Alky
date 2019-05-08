@@ -110,7 +110,7 @@ var recipes = {
                 "Mint Bouquet, for garnish"
             ],
             instructions: [
-                "Add all ingredients save for the garnishes to a shaker without ice, and dry", "shake.",
+                "Add all ingredients save for the garnishes to a shaker without ice, and dry", "Shake.",
                 "Fill the shaker with ice and shake again until the cocktail is chilled.",
                 "Double strain the drink into a tiki or tulip glass.",
                 "Add crushed ice",
