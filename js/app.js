@@ -583,7 +583,8 @@ function ChangeDrinkRecipe(){
 }
 
 function DrinkSlideshow(){
-    drinkSlideshow = document.querySelector("#slideshow-imgs");
+    // drinkSlideshow = document.querySelector("#slideshow-imgs");
+    drinkSlideshow = document.querySelector("#slideshow-container");
     var i = 0;
 
     setInterval(function(){
@@ -591,13 +592,15 @@ function DrinkSlideshow(){
 
         if(i > 2){
             i = 0;
-      }
-        drinkSlideshow.src = "img/slideshow/"+ currentRecipe.slideshow[i];
-    }, 1000);
+        }
+
+        drinkSlideshow.style.backgroundImage = "url(img/slideshow/"+ currentRecipe.slideshow[i] +")";
+    }, 1900);
 }
 
-
-imgNum = 0;
+// First step is already hardcoded inside home.html
+// Init var to continue to second step
+imgNum = 1;
 tutNum = 0;
 
 function TutorialSlideshow(btn){
@@ -623,23 +626,26 @@ function TutorialSlideshow(btn){
     if(btn.id == "next-btn"){
         imgNum += 1;
         tutNum += 1;
-        // console.log("+1");
+        // console.log("+1 | imgNum | tutNum", imgNum, tutNum);
+
+        if(imgNum > 4){
+            imgNum = 4;
+            tutNum = 3;
+            // console.log("stop | imgNum | tutNum", imgNum, tutNum);
+        }
     }
 
     if(btn.id == "prev-btn"){
+
         imgNum -= 1;
         tutNum -= 1;
-        // console.log("-1");
-    }
+        // console.log("-1 | imgNum | tutNum", imgNum, tutNum);
 
-    if(imgNum > 4){
-        imgNum = 4;
-        tutNum = 3;
-    }
-
-    else if(imgNum < 1){
-        imgNum = 1;
-        tutNum = 0;
+        if(imgNum < 1){
+            imgNum = 1;
+            tutNum = 0;
+            // console.log("stop back | imgNum | tutNum", imgNum, tutNum);
+        }
     }
 
     tutImage.src = "img/tut/tutorial-" + imgNum + ".svg";
