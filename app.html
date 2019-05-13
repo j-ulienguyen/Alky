@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alky</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="top-page" onload="ChangePageUI('startPage')">
+    <!-- START NAVIGATION -->
+    <!-- Hamburger Menu Icon -->
+    <nav id="hamburger-icon" onclick="MenuToggle(this)">
+        <div id="line1" class="menu-line"></div>
+        <div id="line2" class="menu-line"></div>
+        <div id="line3" class="menu-line"></div>
+    </nav>
+
+    <!-- Fullscreen Menu -->
+    <div id="menu-nav">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="index.html#about-section" class="nav-item">About Alky</a>
+        <a href="index.html#tutorial-section" class="nav-item">How To</a>
+    </div>
+    <!-- ====== END NAVIGATION ======= -->
+
+    <!-- Background Bubbles -->
+    <div id="bubbles-container">
+        <ul class="bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- Alky Logo -->
+    <header id="logo-container">
+        <!-- Big Logo -->
+        <a href="index.html"><img id="logo" src="img/alky-white.svg" alt="Alky Logo"></a>
+    </header>
+
+    <!-- Start Page (1) -->
+    <div id="start-page" class="partial-wrapper">
+        <section id="name-section">
+            <p class="body-text white">Hi, what's <span class="skyblue">your name?</span></p>
+            <input type="text" name="name" id="name-input" placeholder="Enter Your Name" onkeyup="StoreName()">
+        </section>
+
+        <section class="btn-section">
+            <button class="btn btn-text continue" onclick="ChangePage('startPage')">Continue</button>
+            <!-- <button class="btn-min btn-text btn-text--min">Go Back</button> -->
+        </section>
+    </div>
+
+    <!-- Players Page (2) -->
+    <div id="players-page" class="partial-wrapper">
+        <h1 class="main-heading">How many people are <span class="skyblue">drinking?</span></h1>
+
+        <section id="players-section">
+            <img id="single-icon" class="icons-big" src="img/single-player_icon.svg" alt="Single Player" onclick="ActiveIcon(this); ChangePage('playersPage')">
+            <img id="multiplayer-icon" class="icons-big" src="img/multiplayer_icon.svg" alt="Multiplayer" onclick="ActiveIcon(this); ChangePage('playersPage')">
+        </section>
+
+        <section class="btn-section">
+            <!-- <button class="btn btn-text" onclick="ChangePage('playersPage')">Continue</button> -->
+            <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('playersPage')">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Mood Page (3a) -->
+    <div id="mood-page" class="partial-wrapper">
+        <h1 class="main-heading white">How are you<br><span class="skyblue">feeling?</span></h1>
+
+        <section id="mood-section">
+            <div class="icon-container">
+                <img id="happy-icon" class="icons" src="img/happy_icon.svg" alt="Happy" onclick="ActiveIcon(this);ChangePage('moodPage')">
+                <img id="heartbroken-icon" class="icons" src="img/heartbroken_icon.svg" alt="Heartbroken" onclick="ActiveIcon(this);ChangePage('moodPage')">
+                <img id="fatigue-icon" class="icons" src="img/fatigue_icon.svg" alt="Fatigue" onclick="ActiveIcon(this);ChangePage('moodPage')">
+                <img id="stressed-icon" class="icons" src="img/stressed_icon.svg" alt="Stressed" onclick="ActiveIcon(this);ChangePage('moodPage')">
+            </div>
+        </section>
+
+        <section class="btn-section">
+            <!-- <button class="btn btn-text" onclick="ChangePage('moodPage')">Continue</button> -->
+            <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('moodPage')">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Events Page (3b) -->
+    <div id="events-page" class="partial-wrapper">
+        <h1 class="main-heading white">What are you doing<br><span class="skyblue">tonight?</span></h1>
+
+        <section id="event-section">
+            <div class="icon-container">
+                <img id="goingout-icon" class="icons" src="img/going-out_icon.svg" alt="Going Out" onclick="ActiveIcon(this);ChangePage('eventsPage')">
+                <img id="birthday-icon" class="icons" src="img/birthday_icon.svg" alt="Birthday" onclick="ActiveIcon(this);ChangePage('eventsPage')">
+                <img id="relaxing-icon" class="icons" src="img/relaxing_icon.svg" alt="Relaxing" onclick="ActiveIcon(this);ChangePage('eventsPage')">
+                <img id="gamenight-icon" class="icons" src="img/game-night_icon.svg" alt="Game Night" onclick="ActiveIcon(this);ChangePage('eventsPage')">
+            </div>
+        </section>
+
+        <section class="btn-section">
+            <!-- <button class="btn btn-text" onclick="ChangePage('eventsPage')">Continue</button> -->
+            <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('eventsPage')">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Strength Page (4) -->
+    <div id="strength-page" class="partial-wrapper">
+        <h1 class="main-heading">Strength of<span class="skyblue"> Drink?</span></h1>
+
+        <section id="strength-section">
+            <img class="strength-icon" id="light-icon" src="img/light_icon.svg" alt="Light Strength" onclick="ActiveIcon(this);ChangePage('strengthPage')">
+            <img class="strength-icon" id="medium-icon" src="img/medium_icon.svg" alt="Medium Strength" onclick="ActiveIcon(this);ChangePage('strengthPage')">
+            <img class="strength-icon" id="hard-icon" src="img/hard_icon.svg" alt="Hard Strength" onclick="ActiveIcon(this);ChangePage('strengthPage')">
+        </section>
+
+        <section class="btn-section">
+            <!-- <button class="btn btn-text" onclick="ChangePage('strengthPage')">Continue</button> -->
+            <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('strengthPage')">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Drink Recommendation Page (5) -->
+    <div id="recommend-page" class="partial-wrapper">
+        <h3 class="recommendation-text white">Drink Recommendation</h3>
+        <h1 class="main-heading white uppercase drink-name">{Drink Name}</h1>
+
+        <section id="drink-section">
+            <div class="icon-container">
+                <img src="img/classic-martini.svg" alt="Drink Icon" id="drink-icon">
+            </div>
+            <p id="drink-cta" class="drink-info body-text white">{Drink CTA}</p>
+        </section>
+
+        <section class="btn-section">
+            <button id="viewrecipe-btn" class="btn btn-text" onclick="ChangePage('recommendPage')">View Recipe</button>
+            <button class="btn-min btn-text btn-text--min" onclick="ChangePageBack('recommendPage')">Go Back</button>
+        </section>
+    </div>
+
+    <!-- Drink Recipe Page (6) -->
+    <div id="recipe-page">
+        <section id="drink-header" class="section-bottom"></section>
+
+        <h3 id="recommend-name">{Your Name}</h3>
+        <br>
+
+        <div class="full-wrapper">
+            <section id="recipe-intro">
+                <h3 class="recommendation-text white">Here's your drink recipe</h3>
+                <h1 class="main-heading drink-name uppercase">{Drink Name}</h1>
+                <p id="drink-intro" class="body-text">{Drink Introduction}</p>
+            </section>
+
+            <section class="btn-section">
+                <a href="#ingredients-section"><button class="btn btn-text">Ingredients</button></a>
+                <a href="#instructions-section"><button class="btn btn-text">Instructions</button></a>
+            </section>
+
+            <section id="ingredients-section">
+                <section id="ingredients-width">
+                    <h1 class="main-heading uppercase skyblue"><span class="skyblue">Ingredients</span></h1>
+                    <ul class="body-text-dark" id="ingredients-list"></ul>
+                </section>
+            </section>
+
+            <section id="slideshow-section">
+                <div id="slideshow-container">
+                    <!-- <img src="img/slideshow/classic-martini-1.jpg" alt="Drink Slideshow" id="slideshow-imgs"> -->
+                </div>
+            </section>
+
+            <section id="instructions-section">
+                <h1 class="main-heading uppercase skyblue"><span class="skyblue">Instructions</span></h1>
+                <ol class="body-text" id="instructions-list"></ol>
+            </section>
+
+            <section class="btn-section">
+                <button class="btn btn-text" onclick="ChangePageBack('recipePage')">Try Again</button>
+            </section>
+        </div>
+        <!-- Back To Top Icon -->
+        <a href="#top-page"><img id="arrow-up" src="img/arrow-up.svg" alt="Back To Top Icon"></a>
+    </div>
+
+    <!-- Link to External JS -->
+    <script src="js/recipes.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
