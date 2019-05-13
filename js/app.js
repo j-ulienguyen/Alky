@@ -366,24 +366,40 @@ function ChangeLogo(){
     currentPage = prox.currentPage;
     console.log("Current page:", currentPage);
 
-    if(currentPage == "startPage"){
-        // Bigger logo
-        logo.style.width = 15 + "rem";
-    }
+    // For TABLET screens
+    if(window.matchMedia("(min-width: 768px) and (max-width: 1024px)").matches){
+        if(currentPage == "startPage"){
+            // Bigger logo
+            logo.style.width = 15 + "rem";
+        }
 
-    else if(currentPage == "playersPage" ||
+        if(currentPage == "playersPage" ||
             currentPage == "moodPage" ||
             currentPage == "eventsPage" ||
             currentPage == "strengthPage" ||
-            currentPage == "recommendPage"){
+            currentPage == "recommendPage" ||
+            currentPage == "recipePage"){
+            // Bigger logo for tablet
+            logo.style.width = 10 + "rem";
+        }
+    }
+    //  For MOBILE screens
+    else {
+
+        if(currentPage == "startPage"){
+            // Bigger logo
+            logo.style.width = 15 + "rem";
+        }
+
+        if(currentPage == "playersPage" ||
+        currentPage == "moodPage" ||
+        currentPage == "eventsPage" ||
+        currentPage == "strengthPage" ||
+        currentPage == "recommendPage" ||
+        currentPage == "recipePage"){
             // Smaller logo
             logo.style.width = 8 + "rem";
-    }
-
-    else if(currentPage == "recipePage"){
-        // Smaller logo and container size
-        // logoContainer.style.padding = "9vh 0";
-        logo.style.width = 8 + "rem";
+        }
     }
 }
 
