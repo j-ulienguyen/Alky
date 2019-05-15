@@ -1,1 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 137.26 137.26"><defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{font-size:11.96px;font-family:NunitoSans-BoldItalic, Nunito Sans;font-weight:700;font-style:italic;letter-spacing:0.12em;}.cls-2,.cls-4{fill:#fff;}.cls-3,.cls-5{fill:none;stroke:#fff;stroke-miterlimit:10;}.cls-3{stroke-width:2.33px;}</style><linearGradient id="linear-gradient" x1="-2456.54" y1="98.32" x2="-2457.54" y2="97.52" gradientTransform="matrix(137.26, 0, 0, -137.26, 337329.15, 13503.98)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1ec4dc"/><stop offset="0.25" stop-color="#369acd"/><stop offset="0.65" stop-color="#4d6fbe"/><stop offset="1" stop-color="#6644af"/></linearGradient></defs><title>Asset 98</title><g id="Layer_2" data-name="Layer 2"><g id="tia-mia"><rect id="Box" class="cls-1" width="137.26" height="137.26" rx="10" ry="10"/><g id="Text"><text class="cls-2" transform="translate(41.78 122.77)">TIA MIA</text></g><g id="Icon"><rect class="cls-3" x="43.68" y="44.6" width="49.69" height="51.69"/><line class="cls-3" x1="43.68" y1="88.23" x2="93.37" y2="88.23"/><rect class="cls-4" x="46.37" y="49.23" width="44.25" height="34.5"/><rect class="cls-5" x="52.12" y="38.23" width="12.5" height="12.5" transform="translate(26.15 -21.45) rotate(26.65)"/><rect class="cls-5" x="72.62" y="38.73" width="11.5" height="14"/><path class="cls-4" d="M90.62,36s2.75-12,9.5-10,13.75,10.5,12,12.75-4.73,5-10.61,3.5S90.62,36,90.62,36Z"/><path class="cls-4" d="M90.62,36s-8-6-9.75-3.25-.75,13.5,3.25,15,9,7,11.5,6.5S90.62,36,90.62,36Z"/><path class="cls-4" d="M90.62,36s1.75-13-1.25-13S79.22,21.48,80,24,90.62,36,90.62,36Z"/><polyline class="cls-5" points="40.62 28.23 48.87 25.76 63.12 73.48"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 137.3 137.3" style="enable-background:new 0 0 137.3 137.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:2.33;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="137.26" x2="1" y2="137.26" gradientTransform="matrix(-137.26 109.8084 109.8084 137.26 -14928.126 -18832.1133)">
+		<stop  offset="0" style="stop-color:#1EC4DC"/>
+		<stop  offset="0.25" style="stop-color:#369ACD"/>
+		<stop  offset="0.65" style="stop-color:#4D6FBE"/>
+		<stop  offset="1" style="stop-color:#6644AF"/>
+	</linearGradient>
+	<path class="st0" d="M10,0h117.3c5.5,0,10,4.5,10,10v117.3c0,5.5-4.5,10-10,10H10c-5.5,0-10-4.5-10-10V10C0,4.5,4.5,0,10,0z"/>
+	<polygon class="st1" points="44.4,122.8 45,115.6 42.3,115.6 42.4,114.3 49.4,114.3 49.3,115.6 46.6,115.6 46,122.8 	"/>
+	<polygon class="st1" points="51.2,122.8 51.9,114.3 53.4,114.3 52.8,122.8 	"/>
+	<path class="st1" d="M62.5,122.8l-0.7-2h-4.1l-1,2h-1.6l4.5-8.4h1.3l3.2,8.4H62.5z M58.3,119.6h3.1l-1.3-3.6L58.3,119.6z"/>
+	<polygon class="st1" points="78.6,114.3 79.8,114.3 79.2,122.8 77.8,122.8 78.2,117.2 75.7,121.4 74.7,121.4 72.8,117.3 
+		72.3,122.8 71,122.8 71.6,114.3 72.9,114.3 75.3,119.8 	"/>
+	<polygon class="st1" points="82.4,122.8 83.1,114.3 84.6,114.3 84,122.8 	"/>
+	<path class="st1" d="M93.7,122.8l-0.7-2h-4.1l-1,2h-1.6l4.5-8.4H92l3.2,8.4H93.7z M89.5,119.6h3.1l-1.3-3.6L89.5,119.6z"/>
+	<rect x="43.7" y="44.6" class="st2" width="49.7" height="51.7"/>
+	<line class="st2" x1="43.7" y1="88.2" x2="93.4" y2="88.2"/>
+	<rect x="46.4" y="49.2" class="st1" width="44.3" height="34.5"/>
+	
+		<rect x="52.1" y="38.2" transform="matrix(0.4486 -0.8938 0.8938 0.4486 -7.5727 76.6979)" class="st3" width="12.5" height="12.5"/>
+	<rect x="72.6" y="38.7" class="st3" width="11.5" height="14"/>
+	<path class="st1" d="M90.6,36c0,0,2.8-12,9.5-10s13.8,10.5,12,12.8s-4.7,5-10.6,3.5S90.6,36,90.6,36z"/>
+	<path class="st1" d="M90.6,36c0,0-8-6-9.8-3.3s-0.8,13.5,3.3,15s9,7,11.5,6.5S90.6,36,90.6,36z"/>
+	<path class="st1" d="M90.6,36c0,0,1.8-13-1.3-13s-10.2-1.5-9.4,1S90.6,36,90.6,36z"/>
+	<polyline class="st3" points="40.6,28.2 48.9,25.8 63.1,73.5 	"/>
+</g>
+</svg>

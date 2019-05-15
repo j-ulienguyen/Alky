@@ -1,1 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 137.26 137.26"><defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{font-size:11.96px;fill:#fff;font-family:NunitoSans-BoldItalic, Nunito Sans;font-weight:700;font-style:italic;letter-spacing:0.12em;}.cls-3{letter-spacing:0.11em;}.cls-4{letter-spacing:0.1em;}.cls-5{letter-spacing:0.11em;}.cls-6,.cls-7{fill:none;stroke:#fff;stroke-miterlimit:10;}.cls-6{stroke-width:2.33px;}.cls-7{stroke-width:2.42px;}</style><linearGradient id="linear-gradient" x1="-2612.66" y1="98.32" x2="-2613.66" y2="97.52" gradientTransform="matrix(137.26, 0, 0, -137.26, 358757.52, 13503.98)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1ec4dc"/><stop offset="0.25" stop-color="#369acd"/><stop offset="0.65" stop-color="#4d6fbe"/><stop offset="1" stop-color="#6644af"/></linearGradient></defs><title>Asset 99</title><g id="Layer_2" data-name="Layer 2"><g id="texas-tiki"><rect id="Box" class="cls-1" width="137.26" height="137.26" rx="10" ry="10"/><g id="Text"><text class="cls-2" transform="translate(30.35 122.77)">T<tspan class="cls-3" x="8.76" y="0">E</tspan><tspan class="cls-4" x="17.16" y="0">X</tspan><tspan class="cls-5" x="26.35" y="0">A</tspan><tspan x="36.57" y="0">S TIKI</tspan></text></g><g id="Icon"><path class="cls-6" d="M99.88,43.23A29,29,0,0,1,102,54.15c0,17.12-15,31-33.5,31S35,71.27,35,54.15a29,29,0,0,1,2.14-10.92Z"/><ellipse class="cls-7" cx="68.52" cy="101.48" rx="16.83" ry="3"/><polygon class="cls-6" points="61.65 86.82 64.98 96.48 72.64 96.48 75.48 86.82 61.65 86.82"/><path class="cls-7" d="M35.06,52.64a13.47,13.47,0,0,1,12.38-2.16c7.17,2.34,8,6,15.5,6.34s13.34-5.17,19.17-5.5,9.42-1.17,14.67.83l5.24,2"/><path class="cls-7" d="M38.61,56.83s5.33-2.49,10.5,0,9.5,6.65,15.17,6.49,13.16-6,19.5-6.49,11,.15,14,1.15"/><path class="cls-7" d="M74.61,48.65l6.67-24s1.33-5.83,7.33-5.17,8,3.67,7.67,6.67S74.61,48.65,74.61,48.65Z"/><path class="cls-7" d="M79.11,48.65s16.5-17.5,18.67-18.17,5,3.84,5.16,6S79.11,48.65,79.11,48.65Z"/><path class="cls-7" d="M73.44,39.53c0-.05,3-10.5,0-13.77s-14.26-1.61-11.8,2.06,9.47,20.83,9.47,20.83Z"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 137.3 137.3" style="enable-background:new 0 0 137.3 137.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:2.33;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2.42;stroke-miterlimit:10;}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="137.26" x2="1" y2="137.26" gradientTransform="matrix(-137.26 109.8084 109.8084 137.26 -14928.5146 -18831.8027)">
+		<stop  offset="0" style="stop-color:#1EC4DC"/>
+		<stop  offset="0.25" style="stop-color:#369ACD"/>
+		<stop  offset="0.65" style="stop-color:#4D6FBE"/>
+		<stop  offset="1" style="stop-color:#6644AF"/>
+	</linearGradient>
+	<path class="st0" d="M10,0h117.3c5.5,0,10,4.5,10,10v117.3c0,5.5-4.5,10-10,10H10c-5.5,0-10-4.5-10-10V10C0,4.5,4.5,0,10,0z"/>
+	<polygon class="st1" points="33,122.8 33.6,115.6 30.8,115.6 30.9,114.3 38,114.3 37.9,115.6 35.1,115.6 34.6,122.8 	"/>
+	<polygon class="st1" points="46,115.6 41.9,115.6 41.7,117.9 45.6,117.9 45.5,119.1 41.6,119.1 41.4,121.6 45.5,121.6 45.4,122.8 
+		39.8,122.8 40.5,114.3 46.1,114.3 	"/>
+	<polygon class="st1" points="55.9,114.3 52.4,118.5 55.3,122.8 53.6,122.8 51.5,119.6 49,122.8 47.2,122.8 50.7,118.5 47.9,114.3 
+		49.7,114.3 51.7,117.3 54.1,114.3 	"/>
+	<path class="st1" d="M63.9,122.8l-0.7-2H59l-1,2h-1.6l4.5-8.4h1.3l3.2,8.4H63.9z M59.7,119.6h3.1l-1.3-3.6L59.7,119.6z"/>
+	<path class="st1" d="M68.8,122.6c-0.6-0.2-1.1-0.4-1.5-0.7l0.6-1.1c0.4,0.3,0.9,0.5,1.3,0.7c0.5,0.1,0.9,0.2,1.5,0.2
+		c0.6,0,1-0.1,1.3-0.3s0.5-0.5,0.5-0.8c0-0.2-0.1-0.4-0.2-0.6c-0.2-0.2-0.4-0.3-0.6-0.4s-0.6-0.2-1-0.3c-0.6-0.2-1.1-0.3-1.4-0.5
+		c-0.4-0.2-0.7-0.4-1-0.7c-0.3-0.3-0.4-0.7-0.4-1.3c0-0.5,0.1-1,0.4-1.3s0.7-0.7,1.2-0.9s1.1-0.3,1.8-0.3c0.6,0,1.2,0.1,1.7,0.3
+		c0.5,0.2,1,0.4,1.3,0.7l-0.6,1.1c-0.4-0.3-0.7-0.5-1.2-0.7c-0.4-0.2-0.8-0.2-1.3-0.2c-0.6,0-1,0.1-1.3,0.3
+		c-0.3,0.2-0.5,0.5-0.5,0.9c0,0.2,0.1,0.5,0.3,0.6c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.6,0.2,1.1,0.3c0.6,0.2,1.1,0.3,1.4,0.5
+		c0.4,0.2,0.7,0.4,0.9,0.7c0.3,0.3,0.4,0.7,0.4,1.2c0,0.8-0.3,1.4-0.9,1.8c-0.6,0.4-1.4,0.7-2.5,0.7C70,122.9,69.4,122.8,68.8,122.6
+		z"/>
+	<polygon class="st1" points="83.3,122.8 83.9,115.6 81.1,115.6 81.2,114.3 88.3,114.3 88.2,115.6 85.4,115.6 84.8,122.8 	"/>
+	<polygon class="st1" points="90.1,122.8 90.7,114.3 92.3,114.3 91.6,122.8 	"/>
+	<polygon class="st1" points="102.7,114.3 98.3,118.4 102.2,122.8 100.4,122.8 96.7,118.8 96.4,122.8 94.9,122.8 95.5,114.3 
+		97.1,114.3 96.8,118.1 100.7,114.3 	"/>
+	<polygon class="st1" points="104.2,122.8 104.8,114.3 106.4,114.3 105.7,122.8 	"/>
+	<path class="st2" d="M99.9,43.2c1.4,3.5,2.1,7.2,2.1,10.9c0,17.1-15,31-33.5,31S35,71.3,35,54.1c0-3.7,0.7-7.5,2.1-10.9H99.9z"/>
+	<path class="st3" d="M68.5,98.5c9.3,0,16.8,1.3,16.8,3c0,1.7-7.5,3-16.8,3c-9.3,0-16.8-1.3-16.8-3C51.7,99.8,59.2,98.5,68.5,98.5z"
+		/>
+	<polygon class="st2" points="61.6,86.8 65,96.5 72.6,96.5 75.5,86.8 	"/>
+	<path class="st3" d="M35.1,52.6c3.5-2.7,8.1-3.5,12.4-2.2c7.2,2.3,8,6,15.5,6.3c7.5,0.3,13.3-5.2,19.2-5.5
+		c5.8-0.3,9.4-1.2,14.7,0.8l5.2,2"/>
+	<path class="st3" d="M38.6,56.8c0,0,5.3-2.5,10.5,0c5.2,2.5,9.5,6.6,15.2,6.5c5.7-0.2,13.2-6,19.5-6.5c6.3-0.5,11,0.1,14,1.1"/>
+	<path class="st3" d="M74.6,48.6l6.7-24c0,0,1.3-5.8,7.3-5.2s8,3.7,7.7,6.7S74.6,48.6,74.6,48.6z"/>
+	<path class="st3" d="M79.1,48.6c0,0,16.5-17.5,18.7-18.2s5,3.8,5.2,6C103.1,38.6,79.1,48.6,79.1,48.6z"/>
+	<path class="st3" d="M73.4,39.5c0,0,3-10.5,0-13.8c-3-3.3-14.3-1.6-11.8,2.1c2.5,3.7,9.5,20.8,9.5,20.8L73.4,39.5z"/>
+</g>
+</svg>

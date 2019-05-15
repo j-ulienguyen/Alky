@@ -1,1 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 137.26 137.26"><defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{font-size:11.96px;fill:#fff;font-family:NunitoSans-BoldItalic, Nunito Sans;font-weight:700;font-style:italic;letter-spacing:0.04em;}.cls-3{letter-spacing:0.12em;}.cls-4{letter-spacing:0.11em;}.cls-5{letter-spacing:0em;}.cls-6{letter-spacing:0.09em;}.cls-7{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3.74px;}</style><linearGradient id="linear-gradient" x1="-2300.32" y1="610.5" x2="-2301.32" y2="609.7" gradientTransform="matrix(137.26, 0, 0, -137.26, 315886.08, 83805.67)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1ec4dc"/><stop offset="0.25" stop-color="#369acd"/><stop offset="0.65" stop-color="#4d6fbe"/><stop offset="1" stop-color="#6644af"/></linearGradient></defs><title>Asset 82</title><g id="Layer_2" data-name="Layer 2"><g id="yakult-soju"><rect id="Box" class="cls-1" width="137.26" height="137.26" rx="10" ry="10"/><g id="Text"><text class="cls-2" transform="translate(22.15 122.77)">Y<tspan class="cls-3" x="7.9" y="0">A</tspan><tspan class="cls-4" x="18.21" y="0">K</tspan><tspan class="cls-3" x="27.42" y="0">U</tspan><tspan class="cls-5" x="37.62" y="0">L</tspan><tspan class="cls-3" x="44.19" y="0">T S</tspan><tspan class="cls-6" x="66.7" y="0">O</tspan><tspan class="cls-3" x="77.05" y="0">JU</tspan></text></g><g id="Icon"><path class="cls-7" d="M74.57,40.63c2.72,0,7.84,9.09,7.84,11.81v50.35H53.24V52.44c0-2.72,5.45-11.81,8.17-11.81"/><rect class="cls-7" x="61.41" y="16.29" width="13.16" height="24.34"/><line class="cls-7" x1="53.24" y1="52.44" x2="82.41" y2="52.44"/><line class="cls-7" x1="53.24" y1="87.96" x2="82.41" y2="87.96"/><line class="cls-7" x1="58.07" y1="23.46" x2="78.07" y2="23.46"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 137.3 137.3" style="enable-background:new 0 0 137.3 137.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:3.74;stroke-miterlimit:10;}
+</style>
+<title>Asset 82</title>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="137.26" x2="1" y2="137.26" gradientTransform="matrix(-137.26 109.8063 109.8063 137.26 -14927.9619 -18832.0156)">
+		<stop  offset="0" style="stop-color:#1EC4DC"/>
+		<stop  offset="0.25" style="stop-color:#369ACD"/>
+		<stop  offset="0.65" style="stop-color:#4D6FBE"/>
+		<stop  offset="1" style="stop-color:#6644AF"/>
+	</linearGradient>
+	<path class="st0" d="M10,0h117.3c5.5,0,10,4.5,10,10v117.3c0,5.5-4.5,10-10,10H10c-5.5,0-10-4.5-10-10V10C0,4.5,4.5,0,10,0z"/>
+	<polygon class="st1" points="30.5,114.3 26.7,118.9 26.4,122.8 24.9,122.8 25.2,118.9 22.1,114.3 23.8,114.3 26,117.6 28.7,114.3 	
+		"/>
+	<path class="st1" d="M37.2,122.8l-0.7-2h-4.1l-1,2h-1.6l4.5-8.4h1.3l3.2,8.4H37.2z M33,119.6h3.1l-1.3-3.6L33,119.6z"/>
+	<polygon class="st1" points="48.8,114.3 44.4,118.4 48.4,122.8 46.6,122.8 42.9,118.8 42.6,122.8 41,122.8 41.7,114.3 43.2,114.3 
+		42.9,118.1 46.9,114.3 	"/>
+	<path class="st1" d="M51.3,122.1c-0.6-0.5-0.9-1.3-0.9-2.3c0-0.1,0-0.3,0-0.5l0.4-4.9h1.5l-0.4,5c0,0.1,0,0.2,0,0.4
+		c0,0.7,0.2,1.2,0.5,1.5c0.3,0.3,0.8,0.5,1.5,0.5c0.6,0,1.1-0.2,1.5-0.5c0.4-0.3,0.6-0.9,0.6-1.6l0.4-5.2h1.5l-0.4,5
+		c-0.1,1.2-0.4,2-1.1,2.6c-0.6,0.6-1.5,0.9-2.6,0.9C52.7,122.9,51.9,122.6,51.3,122.1z"/>
+	<polygon class="st1" points="60.5,122.8 61.1,114.3 62.7,114.3 62.1,121.5 66,121.5 65.9,122.8 	"/>
+	<polygon class="st1" points="69,122.8 69.6,115.6 66.8,115.6 66.9,114.3 74,114.3 73.9,115.6 71.1,115.6 70.5,122.8 	"/>
+	<path class="st1" d="M81.6,122.6c-0.6-0.2-1.1-0.4-1.5-0.7l0.6-1.1c0.4,0.3,0.9,0.5,1.3,0.7c0.5,0.1,0.9,0.2,1.5,0.2
+		c0.6,0,1-0.1,1.3-0.3s0.5-0.5,0.5-0.8c0-0.2-0.1-0.4-0.2-0.6c-0.2-0.2-0.4-0.3-0.6-0.4s-0.6-0.2-1-0.3c-0.6-0.2-1.1-0.3-1.4-0.5
+		c-0.4-0.2-0.7-0.4-1-0.7c-0.3-0.3-0.4-0.7-0.4-1.3c0-0.5,0.1-1,0.4-1.3c0.3-0.4,0.7-0.7,1.2-0.9c0.5-0.2,1.1-0.3,1.8-0.3
+		c0.6,0,1.2,0.1,1.7,0.3c0.5,0.2,1,0.4,1.3,0.7l-0.6,1.1c-0.4-0.3-0.7-0.5-1.2-0.7c-0.4-0.2-0.8-0.2-1.3-0.2c-0.6,0-1,0.1-1.3,0.3
+		c-0.3,0.2-0.5,0.5-0.5,0.9c0,0.2,0.1,0.5,0.3,0.6c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.6,0.2,1.1,0.3c0.6,0.2,1.1,0.3,1.4,0.5
+		c0.4,0.2,0.7,0.4,0.9,0.7c0.3,0.3,0.4,0.7,0.4,1.2c0,0.8-0.3,1.4-0.9,1.8c-0.6,0.4-1.4,0.7-2.5,0.7
+		C82.8,122.9,82.2,122.8,81.6,122.6z"/>
+	<path class="st1" d="M91.4,122.4c-0.6-0.3-1.1-0.8-1.4-1.4c-0.3-0.6-0.5-1.3-0.5-2.1c0-0.9,0.2-1.7,0.5-2.4s0.8-1.2,1.4-1.6
+		c0.6-0.4,1.3-0.6,2.2-0.6c0.8,0,1.5,0.2,2.1,0.5c0.6,0.3,1.1,0.8,1.4,1.4c0.3,0.6,0.5,1.3,0.5,2.1c0,0.9-0.2,1.7-0.5,2.4
+		s-0.8,1.2-1.4,1.6c-0.6,0.4-1.3,0.6-2.2,0.6C92.7,122.9,92,122.7,91.4,122.4z M95.4,120.7c0.5-0.6,0.7-1.4,0.7-2.5
+		c0-0.9-0.2-1.6-0.6-2.1c-0.4-0.5-1-0.7-1.8-0.7c-0.8,0-1.4,0.3-1.9,0.9c-0.5,0.6-0.7,1.4-0.7,2.5c0,0.9,0.2,1.6,0.6,2.1
+		c0.4,0.5,1,0.7,1.8,0.7C94.3,121.6,94.9,121.3,95.4,120.7z"/>
+	<path class="st1" d="M99,121.6l0.8,0c0.4,0,0.7-0.1,0.9-0.3c0.2-0.2,0.3-0.5,0.3-0.9l0.5-6h1.5l-0.5,6c-0.1,0.8-0.3,1.4-0.7,1.8
+		c-0.4,0.4-1.1,0.6-1.9,0.7l-0.9,0.1L99,121.6z"/>
+	<path class="st1" d="M106.6,122.1c-0.6-0.5-0.9-1.3-0.9-2.3c0-0.1,0-0.3,0-0.5l0.4-4.9h1.5l-0.4,5c0,0.1,0,0.2,0,0.4
+		c0,0.7,0.2,1.2,0.5,1.5c0.3,0.3,0.8,0.5,1.5,0.5c0.6,0,1.1-0.2,1.5-0.5c0.4-0.3,0.6-0.9,0.6-1.6l0.4-5.2h1.5l-0.4,5
+		c-0.1,1.2-0.4,2-1.1,2.6c-0.6,0.6-1.5,0.9-2.6,0.9C108.1,122.9,107.2,122.6,106.6,122.1z"/>
+	<path class="st2" d="M74.6,40.6c2.7,0,7.8,9.1,7.8,11.8v50.4H53.2V52.4c0-2.7,5.4-11.8,8.2-11.8"/>
+	<rect x="61.4" y="16.3" class="st2" width="13.2" height="24.3"/>
+	<line class="st2" x1="53.2" y1="52.4" x2="82.4" y2="52.4"/>
+	<line class="st2" x1="53.2" y1="88" x2="82.4" y2="88"/>
+	<line class="st2" x1="58.1" y1="23.5" x2="78.1" y2="23.5"/>
+</g>
+</svg>

@@ -625,8 +625,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    transition: background-image 1s ease-in;
+    /* transition: background-image 1s ease-in; */
 }
 
 #slideshow-imgs {
@@ -697,7 +696,7 @@ body {
 /* For screen sizes between 800px and 1280px - TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #name-section {
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
 
     #name-section .body-text {
@@ -732,7 +731,6 @@ body {
     }
 
     .icon-container {
-        border: 1px solid red;
         width: 80%;
         margin: 0 auto;
         margin-bottom: 1.35rem;

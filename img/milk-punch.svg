@@ -1,1 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 137.26 137.26"><defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{font-size:11.96px;font-family:NunitoSans-BoldItalic, Nunito Sans;font-weight:700;font-style:italic;letter-spacing:0.12em;}.cls-2,.cls-4{fill:#fff;}.cls-3{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.33px;}</style><linearGradient id="linear-gradient" x1="-2300.43" y1="270.56" x2="-2301.43" y2="269.76" gradientTransform="matrix(137.26, 0, 0, -137.26, 315900.79, 37145.25)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1ec4dc"/><stop offset="0.25" stop-color="#369acd"/><stop offset="0.65" stop-color="#4d6fbe"/><stop offset="1" stop-color="#6644af"/></linearGradient></defs><title>Asset 92</title><g id="Layer_2" data-name="Layer 2"><g id="milk-punch"><rect id="Box" class="cls-1" width="137.26" height="137.26" rx="10" ry="10"/><g id="Text"><text class="cls-2" transform="translate(25.15 122.77)">MILK PUNCH</text></g><g id="Icon"><polyline class="cls-3" points="37.88 50.47 97.3 50.47 88.3 88.08 88.3 97.81 49.3 97.81 49.3 88.08 38.88 50.47"/><polygon class="cls-4" points="45.13 56.85 92.13 56.85 84.76 85.97 84.88 94.72 52.97 94.72 53.01 86.1 45.13 56.85"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 137.3 137.3" style="enable-background:new 0 0 137.3 137.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:2.33;stroke-miterlimit:10;}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="137.26" x2="1" y2="137.26" gradientTransform="matrix(-137.26 109.8063 109.8063 137.26 -14928.0742 -18831.9238)">
+		<stop  offset="0" style="stop-color:#1EC4DC"/>
+		<stop  offset="0.25" style="stop-color:#369ACD"/>
+		<stop  offset="0.65" style="stop-color:#4D6FBE"/>
+		<stop  offset="1" style="stop-color:#6644AF"/>
+	</linearGradient>
+	<path class="st0" d="M10,0h117.3c5.5,0,10,4.5,10,10v117.3c0,5.5-4.5,10-10,10H10c-5.5,0-10-4.5-10-10V10C0,4.5,4.5,0,10,0z"/>
+	<polygon class="st1" points="33.5,114.3 34.7,114.3 34,122.8 32.7,122.8 33.1,117.2 30.6,121.4 29.6,121.4 27.6,117.3 27.2,122.8 
+		25.9,122.8 26.5,114.3 27.7,114.3 30.2,119.8 	"/>
+	<polygon class="st1" points="37.3,122.8 38,114.3 39.5,114.3 38.9,122.8 	"/>
+	<polygon class="st1" points="42.1,122.8 42.8,114.3 44.3,114.3 43.7,121.5 47.7,121.5 47.6,122.8 	"/>
+	<polygon class="st1" points="58,114.3 53.6,118.4 57.5,122.8 55.7,122.8 52,118.8 51.7,122.8 50.2,122.8 50.8,114.3 52.4,114.3 
+		52.1,118.1 56,114.3 	"/>
+	<path class="st1" d="M70.4,115c0.5,0.4,0.7,1,0.7,1.8c0,0.9-0.3,1.6-0.8,2c-0.5,0.5-1.3,0.7-2.2,0.7h-2.2l-0.3,3.3h-1.5l0.7-8.4
+		h3.6C69.3,114.3,69.9,114.6,70.4,115z M69.7,116.8c0-0.9-0.5-1.3-1.5-1.3h-1.9l-0.2,2.8H68C69.1,118.3,69.7,117.8,69.7,116.8z"/>
+	<path class="st1" d="M74.5,122.1c-0.6-0.5-0.9-1.3-0.9-2.3c0-0.1,0-0.3,0-0.5l0.4-4.9h1.5l-0.4,5c0,0.1,0,0.2,0,0.4
+		c0,0.7,0.2,1.2,0.5,1.5c0.3,0.3,0.8,0.5,1.5,0.5c0.6,0,1.1-0.2,1.5-0.5c0.4-0.3,0.6-0.9,0.6-1.6l0.4-5.2h1.5l-0.4,5
+		c-0.1,1.2-0.4,2-1.1,2.6s-1.5,0.9-2.6,0.9C75.9,122.9,75.1,122.6,74.5,122.1z"/>
+	<polygon class="st1" points="90,114.3 91.4,114.3 90.8,122.8 89.6,122.8 85.6,116.9 85.1,122.8 83.6,122.8 84.3,114.3 85.5,114.3 
+		89.5,120.2 	"/>
+	<path class="st1" d="M95.9,122.4c-0.6-0.3-1-0.8-1.3-1.4c-0.3-0.6-0.5-1.3-0.5-2.1c0-0.9,0.2-1.7,0.5-2.4c0.4-0.7,0.8-1.2,1.5-1.6
+		c0.6-0.4,1.4-0.6,2.3-0.6c0.6,0,1.1,0.1,1.6,0.3c0.5,0.2,0.9,0.4,1.3,0.7l-0.6,1.1c-0.4-0.3-0.7-0.5-1.1-0.7
+		c-0.4-0.1-0.8-0.2-1.2-0.2c-0.9,0-1.5,0.3-2,0.9c-0.5,0.6-0.7,1.4-0.7,2.5c0,0.9,0.2,1.6,0.6,2c0.4,0.5,1,0.7,1.8,0.7
+		c0.8,0,1.6-0.3,2.3-0.9l0.4,1.1c-0.3,0.3-0.8,0.6-1.3,0.7c-0.5,0.2-1,0.3-1.6,0.3C97.1,122.9,96.4,122.7,95.9,122.4z"/>
+	<polygon class="st1" points="110,114.3 111.5,114.3 110.9,122.8 109.4,122.8 109.6,119.1 105.3,119.1 105.1,122.8 103.5,122.8 
+		104.2,114.3 105.7,114.3 105.4,117.9 109.8,117.9 	"/>
+	<polyline class="st2" points="37.9,50.5 97.3,50.5 88.3,88.1 88.3,97.8 49.3,97.8 49.3,88.1 38.9,50.5 	"/>
+	<polygon class="st1" points="45.1,56.9 92.1,56.9 84.8,86 84.9,94.7 53,94.7 53,86.1 	"/>
+</g>
+</svg>
